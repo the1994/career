@@ -75,6 +75,7 @@ Here's the code for *main layout*:
         </LinearLayout>
         </FrameLayout>
 
+
 Here is the code for *page*:
 
 	<?xml version="1.0" encoding="utf-8"?>
