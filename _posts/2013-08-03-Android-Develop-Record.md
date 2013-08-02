@@ -23,12 +23,6 @@ With [android-support-v4](http://developer.android.com/reference/android/support
 The main layout can be divided into two parts:
 
 1.  Views group. This is where pages group to be presented. For example, if there are three views needed to be presented, you need to design 3 layouts for each of them and combine them togather in the code.
+
 2. Images group. This group is for showing the small points. 
 
-## Action
-------------
-
-There are two main actions:
-
-1.  Construct view groups and image groups.
-2.  Action adapter and listener.
