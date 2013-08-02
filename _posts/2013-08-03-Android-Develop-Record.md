@@ -6,11 +6,116 @@ category: "Programming"
 tags: ["Android"]
 ---
 
-Here is a sample of viewpager :
+# Introduction
+============
+
+Here is a sample of viewpager, you can fork the sample project by clicking [here](https://github.com/jesusjzp/ViewPager) :
 
 ![Sample](http://media-cache-ec0.pinimg.com/736x/1f/d1/8a/1fd18a866baa03a287bd9d3e7ed2525e.jpg)
 
 With [android-support-v4](http://developer.android.com/reference/android/support/v4/app/package-summary.html), we can make more cool effects, such as view pager, action bar, etc.
 
+# Basic structure
+==============
+
+## Layout
+
+The main layout can be divided into two parts:
+
+1.  Views group. This is where pages group to be presented. For example, if there are three views needed to be presented, you need to design 3 layouts for each of them and combine them togather in the code.
+
+2. Images group. This group is for showing the small points. 
+
+Here's the code for *main layout*:
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+         >
+        
+        <LinearLayout 
+                android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="#E6E6E6">
+        
+		<android.support.v4.view.ViewPager
+                    android:id="@+id/guidePages"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+		
+            </LinearLayout>
+	    
+            <LinearLayout 
+		android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		
+           <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+		    
+          <LinearLayout 
+               android:id="@+id/viewGroup"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="40dp"
+               android:gravity="center_horizontal"
+              android:orientation="horizontal">
+		        
+        </LinearLayout>
+        </RelativeLayout>
+		
+        </LinearLayout>
+        </FrameLayout>
 
 
+Here is the code for *page*:
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@android:color/white" >
+
+	    <TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="This is page 01"
+		android:layout_gravity="center"
+		android:padding="16dip"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="This is page 01"
+		android:layout_gravity="center"
+		android:padding="16dip"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+	    <TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="This is page 01"
+		android:layout_gravity="center"
+		android:padding="16dip"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	</LinearLayout>
+
+## Action
+========
+
+There are two main actions:
+
+1.  Construct view groups and image groups.
+2.  Action adapter and listener.
