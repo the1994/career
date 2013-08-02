@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android Develop Record - Margin and Padding"
+title: "Android Develop Record - Margin and Padding(03)"
 description: "Android Develop Record"
 category: "Programming"
 tags: ["Android"]

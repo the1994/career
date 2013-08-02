@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Android Develop Record"
-description: "Android Develop Record"
+description: "Android Develop Record(02)"
 category: "Programming"
 tags: ["Android"]
 ---

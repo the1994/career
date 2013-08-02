@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Android UI design note"
-description: "Study notes for Android UI design"
+description: "Study notes for Android UI design(01)"
 category: "Programming"
 tags: ["Android",  "Java", "xml" ]
 ---
