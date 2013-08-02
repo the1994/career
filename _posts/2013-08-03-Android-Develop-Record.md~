@@ -26,96 +26,11 @@ The main layout can be divided into two parts:
 
 2. Images group. This group is for showing the small points. 
 
-Here's the code for *main layout*:
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-         >
-        
-        <LinearLayout 
-                android:id="@+id/linearLayout1"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:orientation="vertical"
-		android:background="#E6E6E6">
-        
-		<android.support.v4.view.ViewPager
-                    android:id="@+id/guidePages"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"/>
-		
-            </LinearLayout>
-	    
-            <LinearLayout 
-		android:id="@+id/linearLayout2"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:orientation="vertical">
-		
-           <RelativeLayout 
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-		    
-          <LinearLayout 
-               android:id="@+id/viewGroup"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:layout_alignParentBottom="true"
-               android:layout_marginBottom="40dp"
-               android:gravity="center_horizontal"
-              android:orientation="horizontal">
-		        
-        </LinearLayout>
-        </RelativeLayout>
-		
-        </LinearLayout>
-        </FrameLayout>
-
-
-Here is the code for *page*:
-
-	<?xml version="1.0" encoding="utf-8"?>
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:orientation="vertical"
-	    android:background="@android:color/white" >
-
-	    <TextView
-		android:id="@+id/textView1"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="This is page 01"
-		android:layout_gravity="center"
-		android:padding="16dip"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
-	    <TextView
-		android:id="@+id/textView2"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="This is page 01"
-		android:layout_gravity="center"
-		android:padding="16dip"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
-	    <TextView
-		android:id="@+id/textView3"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="This is page 01"
-		android:layout_gravity="center"
-		android:padding="16dip"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
-	    
-	</LinearLayout>
-
 ## Action
 ========
 
 There are two main actions:
 
 1.  Construct view groups and image groups.
+
 2.  Action adapter and listener.
