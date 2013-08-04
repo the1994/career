@@ -26,7 +26,9 @@ JB :
   rss_path : /rss.xml
 
   comments :
-    provider : false
+    provider : disqus
+    disqus : 
+        short_name : zhipeng
 
   analytics :
     provider: mixpanel
