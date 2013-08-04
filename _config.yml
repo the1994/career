@@ -16,7 +16,7 @@ production_url : http://jesusjzp.github.io
 JB :
   version : 0.3.0
 
-  BASE_PATH : true
+  BASE_PATH : false
   ASSET_PATH : false
 
   archive_path: /archive.html
