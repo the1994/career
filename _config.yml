@@ -19,7 +19,7 @@ JB :
   BASE_PATH : false
   ASSET_PATH : false
 
-  archive_path: /archive.html
+  archive_path: /blog.html
   categories_path : /categories.html
   tags_path : /tags.html
   atom_path : /atom.xml
