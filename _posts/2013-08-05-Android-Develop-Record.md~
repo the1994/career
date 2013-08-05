@@ -26,25 +26,25 @@ With this library, you can extend it as parent and customize your personal actio
 
 In your */res/value/styles.xml*, you can modify the theme configuration, here is my example
 
-<resources>
+	<resources>
 
-    <style name="Theme.MyTheme" parent="Theme.Sherlock.Light">
-        <item name="actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
-        <item name="android:actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
-    </style>
+	    <style name="Theme.MyTheme" parent="Theme.Sherlock.Light">
+		<item name="actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
+		<item name="android:actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
+	    </style>
 
-    <style name="Theme.MyTheme.ActionBar" parent="Widget.Sherlock.ActionBar">
-        <item name="android:background">@drawable/bg_header</item>
-        <item name="background">@drawable/bg_header</item>
-        <item name="android:titleTextStyle">@style/Theme.MyTheme.ActionBar.TitleTextStyle</item>
-        <item name="titleTextStyle">@style/Theme.MyTheme.ActionBar.TitleTextStyle</item>
-    </style>
+	    <style name="Theme.MyTheme.ActionBar" parent="Widget.Sherlock.ActionBar">
+		<item name="android:background">@drawable/bg_header</item>
+		<item name="background">@drawable/bg_header</item>
+		<item name="android:titleTextStyle">@style/Theme.MyTheme.ActionBar.TitleTextStyle</item>
+		<item name="titleTextStyle">@style/Theme.MyTheme.ActionBar.TitleTextStyle</item>
+	    </style>
 
-    <style name="Theme.MyTheme.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
-        <item name="android:textColor">#ffffff</item>
-    </style>
+	    <style name="Theme.MyTheme.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+		<item name="android:textColor">#ffffff</item>
+	    </style>
 
-</resources>
+	</resources>
 
 From this xml file, you can see it extends from parent Theme.Sherlock.light, what I customized is just the background.
 
