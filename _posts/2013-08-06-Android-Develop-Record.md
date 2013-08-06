@@ -23,11 +23,5 @@ tags: ["Android"]
 
 **Enum Values**
 
-ImageView.ScaleType 	CENTER 	        Center the image in the view, but perform no scaling. 
-ImageView.ScaleType 	CENTER_CROP 	Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or larger than the corresponding dimension of the view (minus padding). 
-ImageView.ScaleType 	CENTER_INSIDE 	Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be equal to or less than the corresponding dimension of the view (minus padding). 
-ImageView.ScaleType 	FIT_CENTER 	    Scale the image using CENTER. 
-ImageView.ScaleType 	FIT_END 	    Scale the image using END. 
-ImageView.ScaleType 	FIT_START 	    Scale the image using START. 
-ImageView.ScaleType 	FIT_XY 	        Scale the image using FILL. 
-ImageView.ScaleType 	MATRIX 	        Scale using the image matrix when drawing.
+![table](http://media-cache-ec0.pinimg.com/originals/d7/e6/5c/d7e65c00bbae3815dc08b263cdbe8d8b.jpg)
+
