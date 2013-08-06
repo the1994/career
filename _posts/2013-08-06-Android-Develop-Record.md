@@ -10,16 +10,16 @@ tags: ["Android"]
 
 ![screenshot](http://mjanja.co.ke/wordpress/wp-content/uploads/2011/08/Pinch_zoom.png)
 
-## 1 Features
+## Features
 
 - aa
 - bb
 
-## 2 Downloads
+## Downloads
 
-## 3 Documentations
+## Documentations
 
-### 3.1 Imgae view scale type setting
+### Imgae view scale type setting
 
 **Enum Values**
 
