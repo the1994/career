@@ -1,11 +1,3 @@
----
-layout: post
-title: "Markdown document sample"
-description: "This is only a sample"
-category: "Programming"
-tags: ["Markdown", "Jekyll"]
----
-
 # This is only a SAMPLE
 
 # ![Logo](https://github.com/nostra13/Android-Universal-Image-Loader/raw/master/sample/res/drawable-mdpi/ic_launcher.png) Universal Image Loader for Android
