@@ -8,7 +8,7 @@ tags: ["Android"]
 
 # ImageViewHandler
 
-![screenshot]()
+![screenshot](http://mjanja.co.ke/wordpress/wp-content/uploads/2011/08/Pinch_zoom.png)
 
 ## 1 Features
 
