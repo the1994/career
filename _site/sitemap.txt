@@ -10,8 +10,10 @@ http://jesusjzp.github.com/tags.html
 http://jesusjzp.github.com/rss.xml
 http://jesusjzp.github.com/404.html
 
+http://jesusjzp.github.com/blog/2013/08/07/Android-Develop-Record
 http://jesusjzp.github.com/blog/2013/08/06/Fedora-install-setting
 http://jesusjzp.github.com/blog/2013/08/06/Android-Develop-Record
+http://jesusjzp.github.com/blog/2013/08/05/Android-Develop-Record
 http://jesusjzp.github.com/blog/2013/08/04/disqus
 http://jesusjzp.github.com/blog/2013/08/03/vim
 http://jesusjzp.github.com/blog/2013/08/03/geek

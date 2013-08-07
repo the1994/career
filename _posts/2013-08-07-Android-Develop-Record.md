@@ -8,8 +8,7 @@ tags: ["Android"]
 
 ### Simple get request
 
-``` java
-
+{% highlight java %}
 package com.zhipeng.testnet;
 
 import java.io.BufferedReader;
@@ -59,7 +58,6 @@ public class HttpGetMethod {
 		return res;
 	}
 }
+{% endhighlight %}
 
-```
-
-** Attention ** : HttpGet should be place in another thread instead of main thread !!!!!!!!!!! Because in Android 4.0+, this operation is forbidden. 
+**Attention** : HttpGet should be place in another thread instead of main thread !!!!!!!!!!! Because in Android 4.0+, this operation is forbidden. 

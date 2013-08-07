@@ -5,13 +5,72 @@
         <description>Zhipeng JIANG - Zhipeng JIANG</description>
         <link>http://jesusjzp.github.com</link>
         <link>http://jesusjzp.github.com</link>
-        <lastBuildDate>2013-08-07T00:42:32+02:00</lastBuildDate>
-        <pubDate>2013-08-07T00:42:32+02:00</pubDate>
+        <lastBuildDate>2013-08-07T17:59:58+02:00</lastBuildDate>
+        <pubDate>2013-08-07T17:59:58+02:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Vim configuration for all user</title>
+                <title>Android Develop Record(08) - Http Get Request</title>
+                <description>&lt;h3 id='simple_get_request'&gt;Simple get request&lt;/h3&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='java'&gt;&lt;span class='kn'&gt;package&lt;/span&gt; &lt;span class='n'&gt;com&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;zhipeng&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;testnet&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.io.BufferedReader&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.io.IOException&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.io.InputStreamReader&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.HttpURLConnection&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.MalformedURLException&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.URI&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.URL&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.HttpResponse&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.client.HttpClient&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.client.methods.HttpGet&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.impl.client.DefaultHttpClient&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;android.util.Log&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+&lt;span class='kd'&gt;public&lt;/span&gt; &lt;span class='kd'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;HttpGetMethod&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+	&lt;span class='kd'&gt;public&lt;/span&gt; &lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='nf'&gt;get&lt;/span&gt;&lt;span class='o'&gt;()&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+		&lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='n'&gt;res&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+		&lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='n'&gt;httpUrl&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;http://jesusjzp.github.io/&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+		&lt;span class='n'&gt;Log&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;v&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;httpUrl:&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='n'&gt;httpUrl&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
+		&lt;span class='n'&gt;URL&lt;/span&gt; &lt;span class='n'&gt;url&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+
+		&lt;span class='k'&gt;try&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+			&lt;span class='n'&gt;url&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='n'&gt;URL&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;httpUrl&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
+		&lt;span class='o'&gt;}&lt;/span&gt; &lt;span class='k'&gt;catch&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;MalformedURLException&lt;/span&gt; &lt;span class='n'&gt;e&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+			&lt;span class='n'&gt;Log&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;e&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;GetData.java&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;MalformedURLException&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
+		&lt;span class='o'&gt;}&lt;/span&gt;
+
+		&lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;url&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+			&lt;span class='k'&gt;try&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+				&lt;span class='n'&gt;HttpURLConnection&lt;/span&gt; &lt;span class='n'&gt;urlConn&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;HttpURLConnection&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='n'&gt;url&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;openConnection&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
+				&lt;span class='n'&gt;urlConn&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;connect&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
+				&lt;span class='n'&gt;BufferedReader&lt;/span&gt; &lt;span class='n'&gt;reader&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='n'&gt;BufferedReader&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='n'&gt;InputStreamReader&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;urlConn&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;getInputStream&lt;/span&gt;&lt;span class='o'&gt;(),&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;8859-1&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;));&lt;/span&gt;
+				&lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='n'&gt;inputLine&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+				&lt;span class='k'&gt;while&lt;/span&gt; &lt;span class='o'&gt;(((&lt;/span&gt;&lt;span class='n'&gt;inputLine&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;reader&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;readLine&lt;/span&gt;&lt;span class='o'&gt;())&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;))&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
+					&lt;span class='n'&gt;res&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;inputLine&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+				&lt;span class='o'&gt;}&lt;/span&gt;
+				&lt;span class='n'&gt;reader&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;close&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
+				&lt;span class='n'&gt;urlConn&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;disconnect&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
+			&lt;span class='o'&gt;}&lt;/span&gt; &lt;span class='k'&gt;catch&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;IOException&lt;/span&gt; &lt;span class='n'&gt;e&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;	&lt;span class='o'&gt;{&lt;/span&gt;
+				&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+			&lt;span class='o'&gt;}&lt;/span&gt;
+		&lt;span class='o'&gt;}&lt;/span&gt;
+		&lt;span class='n'&gt;Log&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;v&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;res:&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='n'&gt;res&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
+		&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='n'&gt;res&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+	&lt;span class='o'&gt;}&lt;/span&gt;
+&lt;span class='o'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt; : HttpGet should be place in another thread instead of main thread !!!!!!!!!!! Because in Android 4.0+, this operation is forbidden.&lt;/p&gt;</description>
+                <link>http://jesusjzp.github.com/blog/2013/08/07/Android-Develop-Record</link>
+                <guid>http://jesusjzp.github.com/blog/2013/08/07/Android-Develop-Record</guid>
+                <pubDate>2013-08-07T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Basic setting for Fedora installation</title>
                 <description>&lt;h2 id='close_amd_graphics_card'&gt;Close AMD Graphics Card&lt;/h2&gt;
 
 &lt;p&gt;Firstly check your status&lt;/p&gt;
@@ -98,6 +157,55 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
                 <link>http://jesusjzp.github.com/blog/2013/08/06/Android-Develop-Record</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/06/Android-Develop-Record</guid>
                 <pubDate>2013-08-06T00:00:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Android Develop Record(06) - Action Bar</title>
+                <description>&lt;h1 id='action_bar'&gt;Action Bar&lt;/h1&gt;
+
+&lt;p&gt;From Android 3.0, Action bar has become a popular design widget for users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='actionbar' src='http://developer.android.com/images/ui/actionbar@2x.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;However we can&amp;#8217;t apply this design to those previous version, such as android 2.2, 2.3, etc. Although recently android-support-v* has published as a official solution, this compatibility problem has not been solved perfectly.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://actionbarsherlock.com/'&gt;ActionBarSherlock&lt;/a&gt; is a open source library, which can handle this problem far more than android-support-v4 or v13.&lt;/p&gt;
+
+&lt;h2 id='how_to_add_actionbarsherlock'&gt;How to add ActionBarSherlock&lt;/h2&gt;
+
+&lt;h2 id='customize_your_actionbarsherlock'&gt;Customize your ActionBarSherlock&lt;/h2&gt;
+
+&lt;p&gt;With this library, you can extend it as parent and customize your personal action bar.&lt;/p&gt;
+
+&lt;p&gt;In your &lt;em&gt;/res/value/styles.xml&lt;/em&gt;, you can modify the theme configuration, here is my example&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='xml'&gt;&lt;span class='nt'&gt;&amp;lt;resources&amp;gt;&lt;/span&gt;
+
+    &lt;span class='nt'&gt;&amp;lt;style&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.MyTheme&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;parent=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.Sherlock.Light&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;actionBarStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:actionBarStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+
+    &lt;span class='nt'&gt;&amp;lt;style&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.MyTheme.ActionBar&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;parent=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Widget.Sherlock.ActionBar&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:background&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@drawable/bg_header&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;background&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@drawable/bg_header&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:titleTextStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar.TitleTextStyle&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;titleTextStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar.TitleTextStyle&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+
+    &lt;span class='nt'&gt;&amp;lt;style&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.MyTheme.ActionBar.TitleTextStyle&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;parent=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;TextAppearance.Sherlock.Widget.ActionBar.Title&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:textColor&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;#ffffff&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+
+&lt;span class='nt'&gt;&amp;lt;/resources&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From this xml file, you can see it extends from parent Theme.Sherlock.light, what I customized is just the background.&lt;/p&gt;
+
+&lt;p&gt;Note, don&amp;#8217;t forget to modify your &lt;em&gt;AndroidManifest.xml&lt;/em&gt;, change the theme to &lt;code&gt;&amp;quot;@style/Theme.MyTheme&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;</description>
+                <link>http://jesusjzp.github.com/blog/2013/08/05/Android-Develop-Record</link>
+                <guid>http://jesusjzp.github.com/blog/2013/08/05/Android-Develop-Record</guid>
+                <pubDate>2013-08-05T00:00:00+02:00</pubDate>
         </item>
 
         <item>
