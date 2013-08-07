@@ -5,65 +5,69 @@
         <description>Zhipeng JIANG - Zhipeng JIANG</description>
         <link>http://jesusjzp.github.com</link>
         <link>http://jesusjzp.github.com</link>
-        <lastBuildDate>2013-08-07T17:59:58+02:00</lastBuildDate>
-        <pubDate>2013-08-07T17:59:58+02:00</pubDate>
+        <lastBuildDate>2013-08-07T23:25:33+02:00</lastBuildDate>
+        <pubDate>2013-08-07T23:25:33+02:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Android Develop Record(08) - Http Get Request</title>
-                <description>&lt;h3 id='simple_get_request'&gt;Simple get request&lt;/h3&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='java'&gt;&lt;span class='kn'&gt;package&lt;/span&gt; &lt;span class='n'&gt;com&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;zhipeng&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;testnet&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+                <description>&lt;h3 id=&#39;simple_get_request&#39;&gt;Simple get request&lt;/h3&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;java&#39;&gt;&lt;span class=&#39;kn&#39;&gt;package&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;com&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;zhipeng&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;testnet&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
 
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.io.BufferedReader&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.io.IOException&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.io.InputStreamReader&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.HttpURLConnection&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.MalformedURLException&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.URI&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;java.net.URL&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.io.BufferedReader&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.io.IOException&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.io.InputStreamReader&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.net.HttpURLConnection&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.net.MalformedURLException&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.net.URI&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;java.net.URL&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
 
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.HttpResponse&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.client.HttpClient&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.client.methods.HttpGet&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;org.apache.http.impl.client.DefaultHttpClient&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;org.apache.http.HttpResponse&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;org.apache.http.client.HttpClient&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;org.apache.http.client.methods.HttpGet&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;org.apache.http.impl.client.DefaultHttpClient&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
 
-&lt;span class='kn'&gt;import&lt;/span&gt; &lt;span class='nn'&gt;android.util.Log&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class=&#39;kn&#39;&gt;import&lt;/span&gt; &lt;span class=&#39;nn&#39;&gt;android.util.Log&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
 
-&lt;span class='kd'&gt;public&lt;/span&gt; &lt;span class='kd'&gt;class&lt;/span&gt; &lt;span class='nc'&gt;HttpGetMethod&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-	&lt;span class='kd'&gt;public&lt;/span&gt; &lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='nf'&gt;get&lt;/span&gt;&lt;span class='o'&gt;()&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-		&lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='n'&gt;res&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-		&lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='n'&gt;httpUrl&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;http://jesusjzp.github.io/&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-		&lt;span class='n'&gt;Log&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;v&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;httpUrl:&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='n'&gt;httpUrl&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
-		&lt;span class='n'&gt;URL&lt;/span&gt; &lt;span class='n'&gt;url&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
+&lt;span class=&#39;kd&#39;&gt;public&lt;/span&gt; &lt;span class=&#39;kd&#39;&gt;class&lt;/span&gt; &lt;span class=&#39;nc&#39;&gt;HttpGetMethod&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+	&lt;span class=&#39;kd&#39;&gt;public&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;String&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;get&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;()&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+		&lt;span class=&#39;n&#39;&gt;String&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;res&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+		&lt;span class=&#39;n&#39;&gt;String&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;httpUrl&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;http://jesusjzp.github.io/&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+		&lt;span class=&#39;n&#39;&gt;Log&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;v&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;httpUrl:&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;httpUrl&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;);&lt;/span&gt;
+		&lt;span class=&#39;n&#39;&gt;URL&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;url&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;kc&#39;&gt;null&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
 
-		&lt;span class='k'&gt;try&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-			&lt;span class='n'&gt;url&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='n'&gt;URL&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;httpUrl&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
-		&lt;span class='o'&gt;}&lt;/span&gt; &lt;span class='k'&gt;catch&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;MalformedURLException&lt;/span&gt; &lt;span class='n'&gt;e&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-			&lt;span class='n'&gt;Log&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;e&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;GetData.java&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;MalformedURLException&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
-		&lt;span class='o'&gt;}&lt;/span&gt;
+		&lt;span class=&#39;k&#39;&gt;try&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+			&lt;span class=&#39;n&#39;&gt;url&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;URL&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;httpUrl&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;);&lt;/span&gt;
+		&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;catch&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;MalformedURLException&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;e&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+			&lt;span class=&#39;n&#39;&gt;Log&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;e&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;GetData.java&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;MalformedURLException&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;);&lt;/span&gt;
+		&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt;
 
-		&lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;url&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-			&lt;span class='k'&gt;try&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-				&lt;span class='n'&gt;HttpURLConnection&lt;/span&gt; &lt;span class='n'&gt;urlConn&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;HttpURLConnection&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='n'&gt;url&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;openConnection&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
-				&lt;span class='n'&gt;urlConn&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;connect&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
-				&lt;span class='n'&gt;BufferedReader&lt;/span&gt; &lt;span class='n'&gt;reader&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='n'&gt;BufferedReader&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='k'&gt;new&lt;/span&gt; &lt;span class='n'&gt;InputStreamReader&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;urlConn&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;getInputStream&lt;/span&gt;&lt;span class='o'&gt;(),&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;8859-1&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;));&lt;/span&gt;
-				&lt;span class='n'&gt;String&lt;/span&gt; &lt;span class='n'&gt;inputLine&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-				&lt;span class='k'&gt;while&lt;/span&gt; &lt;span class='o'&gt;(((&lt;/span&gt;&lt;span class='n'&gt;inputLine&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;reader&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;readLine&lt;/span&gt;&lt;span class='o'&gt;())&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='kc'&gt;null&lt;/span&gt;&lt;span class='o'&gt;))&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-					&lt;span class='n'&gt;res&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;inputLine&lt;/span&gt; &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-				&lt;span class='o'&gt;}&lt;/span&gt;
-				&lt;span class='n'&gt;reader&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;close&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
-				&lt;span class='n'&gt;urlConn&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;disconnect&lt;/span&gt;&lt;span class='o'&gt;();&lt;/span&gt;
-			&lt;span class='o'&gt;}&lt;/span&gt; &lt;span class='k'&gt;catch&lt;/span&gt; &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='n'&gt;IOException&lt;/span&gt; &lt;span class='n'&gt;e&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;	&lt;span class='o'&gt;{&lt;/span&gt;
-				&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-			&lt;span class='o'&gt;}&lt;/span&gt;
-		&lt;span class='o'&gt;}&lt;/span&gt;
-		&lt;span class='n'&gt;Log&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='na'&gt;v&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;res:&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;,&lt;/span&gt; &lt;span class='n'&gt;res&lt;/span&gt;&lt;span class='o'&gt;);&lt;/span&gt;
-		&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='n'&gt;res&lt;/span&gt;&lt;span class='o'&gt;;&lt;/span&gt;
-	&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;span class='o'&gt;}&lt;/span&gt;
+		&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;url&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;!=&lt;/span&gt; &lt;span class=&#39;kc&#39;&gt;null&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+			&lt;span class=&#39;k&#39;&gt;try&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+				&lt;span class=&#39;n&#39;&gt;HttpURLConnection&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;urlConn&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;HttpURLConnection&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;url&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;openConnection&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;();&lt;/span&gt;
+				&lt;span class=&#39;n&#39;&gt;urlConn&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;connect&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;();&lt;/span&gt;
+				&lt;span class=&#39;n&#39;&gt;BufferedReader&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;reader&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;BufferedReader&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;k&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;InputStreamReader&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;urlConn&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;getInputStream&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(),&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;8859-1&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;));&lt;/span&gt;
+				&lt;span class=&#39;n&#39;&gt;String&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;inputLine&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;kc&#39;&gt;null&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+				&lt;span class=&#39;k&#39;&gt;while&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;(((&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;inputLine&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;reader&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;readLine&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;())&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;!=&lt;/span&gt; &lt;span class=&#39;kc&#39;&gt;null&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;))&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+					&lt;span class=&#39;n&#39;&gt;res&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;+=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;inputLine&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+				&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt;
+				&lt;span class=&#39;n&#39;&gt;reader&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;close&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;();&lt;/span&gt;
+				&lt;span class=&#39;n&#39;&gt;urlConn&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;disconnect&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;();&lt;/span&gt;
+			&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;catch&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;IOException&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;e&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;)&lt;/span&gt;	&lt;span class=&#39;o&#39;&gt;{&lt;/span&gt;
+				&lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+			&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt;
+		&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt;
+		&lt;span class=&#39;n&#39;&gt;Log&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;na&#39;&gt;v&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;res:&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;res&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;);&lt;/span&gt;
+		&lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;res&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;;&lt;/span&gt;
+	&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt; : HttpGet should be place in another thread instead of main thread !!!!!!!!!!! Because in Android 4.0+, this operation is forbidden.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt; : HttpGet should be place in another thread instead of main thread !!!!!!!!!!! Because in Android 4.0+, this operation is forbidden.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PS&lt;/strong&gt; This girl reminds me of someone&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#39;Forfun&#39; src=&#39;http://hd.wallpaperswide.com/thumbs/pretty_girl-t2.jpg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/08/07/Android-Develop-Record</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/07/Android-Develop-Record</guid>
                 <pubDate>2013-08-07T00:00:00+02:00</pubDate>
@@ -71,7 +75,7 @@
 
         <item>
                 <title>Basic setting for Fedora installation</title>
-                <description>&lt;h2 id='close_amd_graphics_card'&gt;Close AMD Graphics Card&lt;/h2&gt;
+                <description>&lt;h2 id=&#39;close_amd_graphics_card&#39;&gt;Close AMD Graphics Card&lt;/h2&gt;
 
 &lt;p&gt;Firstly check your status&lt;/p&gt;
 
@@ -95,13 +99,13 @@ echo OFF &amp;gt; /sys/kernel/debug/vgaswitcheroo/switch&lt;/code&gt;&lt;/pre&gt
 
 &lt;pre&gt;&lt;code&gt;sudo chmod +x rc.local&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='add_ctrlaltt'&gt;Add Ctrl+Alt+T&lt;/h2&gt;
+&lt;h2 id=&#39;add_ctrlaltt&#39;&gt;Add Ctrl+Alt+T&lt;/h2&gt;
 
 &lt;p&gt;In short cut menu, add a new shortcut by setting &lt;em&gt;gnome-terminel&lt;/em&gt; with Ctrl+Alt+T.&lt;/p&gt;
 
-&lt;h2 id='installation'&gt;Installation&lt;/h2&gt;
+&lt;h2 id=&#39;installation&#39;&gt;Installation&lt;/h2&gt;
 
-&lt;h3 id='basic_tools'&gt;Basic tools&lt;/h3&gt;
+&lt;h3 id=&#39;basic_tools&#39;&gt;Basic tools&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo su
 yum install vim
@@ -109,7 +113,7 @@ yum install git
 yum install gnome-tweak-tool
 ...&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id='sublime_text'&gt;Sublime text&lt;/h3&gt;
+&lt;h3 id=&#39;sublime_text&#39;&gt;Sublime text&lt;/h3&gt;
 
 &lt;p&gt;Download the latest version of Sublime text, unzip it and new a desktop shortcuts.&lt;/p&gt;
 
@@ -125,7 +129,37 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Then add this desktop shortcuts to &lt;em&gt;/usr/share/application&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id='vlcskype'&gt;VLC/Skype&lt;/h3&gt;</description>
+&lt;h3 id=&#39;vlcskype&#39;&gt;VLC/Skype&lt;/h3&gt;
+
+&lt;p&gt;It needs to download the rpm from official website.&lt;/p&gt;
+
+&lt;h2 id=&#39;appearence&#39;&gt;Appearence&lt;/h2&gt;
+
+&lt;h3 id=&#39;font&#39;&gt;Font&lt;/h3&gt;
+
+&lt;p&gt;There are pre-built packages for Fedora users. Run these commands instead of installing these files manually. It is recommended to restart your system after installation. If you&amp;#8217;ve already run these commands before, then your normal system updates will keep your packages up to date.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo rpm -Uvh http://www.infinality.net/fedora/linux/infinality-repo-1.0-1.noarch.rpm 
+sudo yum install freetype-infinality fontconfig-infinality&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#39;top_pannel&#39;&gt;Top pannel&lt;/h3&gt;
+
+&lt;p&gt;A dirty fix for that can be editing the panel section in gnome-shell.css. But after every update to the shell this customization will get lost, so its beter to keep a backup copy of what changes you are making.&lt;/p&gt;
+
+&lt;p&gt;Edit the file &lt;code&gt;/usr/share/gnome-shell/theme/gnome-shell.css&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Find the panel section and modify the code like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#panel {
+    color: #ffffff;
+    background-color:rgba(0,0,0,0.5);
+    font-weight: bold;
+    height: 1.86em;
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&amp;#8217;s my desktop&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#39;desktop&#39; src=&#39;http://media-cache-ak0.pinimg.com/736x/81/bb/8d/81bb8dff8d7bc71f905ec09e69119784.jpg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/08/06/Fedora-install-setting</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/06/Fedora-install-setting</guid>
                 <pubDate>2013-08-06T00:00:00+02:00</pubDate>
@@ -133,11 +167,11 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
 
         <item>
                 <title>Android Develop Record(07) - Image Zoom and Drag</title>
-                <description>&lt;h1 id='imageviewhandler'&gt;ImageViewHandler&lt;/h1&gt;
+                <description>&lt;h1 id=&#39;imageviewhandler&#39;&gt;ImageViewHandler&lt;/h1&gt;
 
-&lt;p&gt;&lt;img alt='screenshot' src='http://mjanja.co.ke/wordpress/wp-content/uploads/2011/08/Pinch_zoom.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;screenshot&#39; src=&#39;http://mjanja.co.ke/wordpress/wp-content/uploads/2011/08/Pinch_zoom.png&#39; /&gt;&lt;/p&gt;
 
-&lt;h2 id='features'&gt;Features&lt;/h2&gt;
+&lt;h2 id=&#39;features&#39;&gt;Features&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;aa&lt;/li&gt;
@@ -145,15 +179,15 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;bb&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id='downloads'&gt;Downloads&lt;/h2&gt;
+&lt;h2 id=&#39;downloads&#39;&gt;Downloads&lt;/h2&gt;
 
-&lt;h2 id='documentations'&gt;Documentations&lt;/h2&gt;
+&lt;h2 id=&#39;documentations&#39;&gt;Documentations&lt;/h2&gt;
 
-&lt;h3 id='imgae_view_scale_type_setting'&gt;Imgae view scale type setting&lt;/h3&gt;
+&lt;h3 id=&#39;imgae_view_scale_type_setting&#39;&gt;Imgae view scale type setting&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Enum Values&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='table' src='http://media-cache-ec0.pinimg.com/originals/d7/e6/5c/d7e65c00bbae3815dc08b263cdbe8d8b.jpg' /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#39;table&#39; src=&#39;http://media-cache-ec0.pinimg.com/originals/d7/e6/5c/d7e65c00bbae3815dc08b263cdbe8d8b.jpg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/08/06/Android-Develop-Record</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/06/Android-Develop-Record</guid>
                 <pubDate>2013-08-06T00:00:00+02:00</pubDate>
@@ -161,42 +195,42 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
 
         <item>
                 <title>Android Develop Record(06) - Action Bar</title>
-                <description>&lt;h1 id='action_bar'&gt;Action Bar&lt;/h1&gt;
+                <description>&lt;h1 id=&#39;action_bar&#39;&gt;Action Bar&lt;/h1&gt;
 
 &lt;p&gt;From Android 3.0, Action bar has become a popular design widget for users.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='actionbar' src='http://developer.android.com/images/ui/actionbar@2x.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;actionbar&#39; src=&#39;http://developer.android.com/images/ui/actionbar@2x.png&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;However we can&amp;#8217;t apply this design to those previous version, such as android 2.2, 2.3, etc. Although recently android-support-v* has published as a official solution, this compatibility problem has not been solved perfectly.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://actionbarsherlock.com/'&gt;ActionBarSherlock&lt;/a&gt; is a open source library, which can handle this problem far more than android-support-v4 or v13.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#39;http://actionbarsherlock.com/&#39;&gt;ActionBarSherlock&lt;/a&gt; is a open source library, which can handle this problem far more than android-support-v4 or v13.&lt;/p&gt;
 
-&lt;h2 id='how_to_add_actionbarsherlock'&gt;How to add ActionBarSherlock&lt;/h2&gt;
+&lt;h2 id=&#39;how_to_add_actionbarsherlock&#39;&gt;How to add ActionBarSherlock&lt;/h2&gt;
 
-&lt;h2 id='customize_your_actionbarsherlock'&gt;Customize your ActionBarSherlock&lt;/h2&gt;
+&lt;h2 id=&#39;customize_your_actionbarsherlock&#39;&gt;Customize your ActionBarSherlock&lt;/h2&gt;
 
 &lt;p&gt;With this library, you can extend it as parent and customize your personal action bar.&lt;/p&gt;
 
 &lt;p&gt;In your &lt;em&gt;/res/value/styles.xml&lt;/em&gt;, you can modify the theme configuration, here is my example&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='xml'&gt;&lt;span class='nt'&gt;&amp;lt;resources&amp;gt;&lt;/span&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;xml&#39;&gt;&lt;span class=&#39;nt&#39;&gt;&amp;lt;resources&amp;gt;&lt;/span&gt;
 
-    &lt;span class='nt'&gt;&amp;lt;style&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.MyTheme&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;parent=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.Sherlock.Light&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;actionBarStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:actionBarStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-    &lt;span class='nt'&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+    &lt;span class=&#39;nt&#39;&gt;&amp;lt;style&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Theme.MyTheme&amp;quot;&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;parent=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Theme.Sherlock.Light&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;actionBarStyle&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;android:actionBarStyle&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&#39;nt&#39;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
 
-    &lt;span class='nt'&gt;&amp;lt;style&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.MyTheme.ActionBar&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;parent=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Widget.Sherlock.ActionBar&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:background&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@drawable/bg_header&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;background&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@drawable/bg_header&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:titleTextStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar.TitleTextStyle&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;titleTextStyle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar.TitleTextStyle&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-    &lt;span class='nt'&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+    &lt;span class=&#39;nt&#39;&gt;&amp;lt;style&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Theme.MyTheme.ActionBar&amp;quot;&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;parent=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Widget.Sherlock.ActionBar&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;android:background&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;@drawable/bg_header&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;background&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;@drawable/bg_header&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;android:titleTextStyle&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar.TitleTextStyle&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;titleTextStyle&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;@style/Theme.MyTheme.ActionBar.TitleTextStyle&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&#39;nt&#39;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
 
-    &lt;span class='nt'&gt;&amp;lt;style&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Theme.MyTheme.ActionBar.TitleTextStyle&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;parent=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;TextAppearance.Sherlock.Widget.ActionBar.Title&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;android:textColor&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;#ffffff&lt;span class='nt'&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
-    &lt;span class='nt'&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+    &lt;span class=&#39;nt&#39;&gt;&amp;lt;style&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Theme.MyTheme.ActionBar.TitleTextStyle&amp;quot;&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;parent=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;TextAppearance.Sherlock.Widget.ActionBar.Title&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&#39;nt&#39;&gt;&amp;lt;item&lt;/span&gt; &lt;span class=&#39;na&#39;&gt;name=&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;android:textColor&amp;quot;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;&amp;gt;&lt;/span&gt;#ffffff&lt;span class=&#39;nt&#39;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&#39;nt&#39;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
 
-&lt;span class='nt'&gt;&amp;lt;/resources&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;nt&#39;&gt;&amp;lt;/resources&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;From this xml file, you can see it extends from parent Theme.Sherlock.light, what I customized is just the background.&lt;/p&gt;
 
@@ -210,25 +244,25 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
 
         <item>
                 <title>Disqus configuration</title>
-                <description>&lt;h2 id='disqus'&gt;Disqus&lt;/h2&gt;
+                <description>&lt;h2 id=&#39;disqus&#39;&gt;Disqus&lt;/h2&gt;
 
 &lt;p&gt;Disqus is a third part comments provider, which is very popular!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='disqus' src='http://cdn2.business2community.com/wp-content/uploads/2012/08/8-23-2012-11-42-11-AM.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;disqus&#39; src=&#39;http://cdn2.business2community.com/wp-content/uploads/2012/08/8-23-2012-11-42-11-AM.png&#39; /&gt;&lt;/p&gt;
 
-&lt;h3 id='installation'&gt;Installation&lt;/h3&gt;
+&lt;h3 id=&#39;installation&#39;&gt;Installation&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Register in &lt;a href='http://disqus.com/'&gt;Disqus&lt;/a&gt; step by step&lt;/li&gt;
+&lt;li&gt;Register in &lt;a href=&#39;http://disqus.com/&#39;&gt;Disqus&lt;/a&gt; step by step&lt;/li&gt;
 
 &lt;li&gt;Set your domain name, short name, e-mail, etc.&lt;/li&gt;
 
 &lt;li&gt;Get the plungin code, insert it to your webpage template.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='sample'&gt;Sample&lt;/h3&gt;
+&lt;h3 id=&#39;sample&#39;&gt;Sample&lt;/h3&gt;
 
-&lt;p&gt;&lt;img alt='disqus' src='http://media-cache-ak0.pinimg.com/originals/28/12/8a/28128acd89819c3de7ab1bb8105c123b.jpg' /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#39;disqus&#39; src=&#39;http://media-cache-ak0.pinimg.com/originals/28/12/8a/28128acd89819c3de7ab1bb8105c123b.jpg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/08/04/disqus</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/04/disqus</guid>
                 <pubDate>2013-08-04T00:00:00+02:00</pubDate>
@@ -236,23 +270,23 @@ StartupNotify=true&lt;/code&gt;&lt;/pre&gt;
 
         <item>
                 <title>Vim configuration for all users</title>
-                <description>&lt;h2 id='gvim'&gt;Gvim&lt;/h2&gt;
+                <description>&lt;h2 id=&#39;gvim&#39;&gt;Gvim&lt;/h2&gt;
 
-&lt;p&gt;&lt;img alt='VIM' src='http://roclinux.cn/wp-content/uploads/2008/09/screenshot-rootwupengchong-rocrocket-career-anycatch_project-anycatch2roc.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;VIM&#39; src=&#39;http://roclinux.cn/wp-content/uploads/2008/09/screenshot-rootwupengchong-rocrocket-career-anycatch_project-anycatch2roc.png&#39; /&gt;&lt;/p&gt;
 
-&lt;h3 id='installation'&gt;Installation&lt;/h3&gt;
+&lt;h3 id=&#39;installation&#39;&gt;Installation&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install gvim&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This is a gnome vim application for using vim, as for me, it is more convinient.&lt;/p&gt;
 
-&lt;h3 id='global_configuration_for_vim'&gt;Global configuration for vim&lt;/h3&gt;
+&lt;h3 id=&#39;global_configuration_for_vim&#39;&gt;Global configuration for vim&lt;/h3&gt;
 
-&lt;h5 id='open_and_edit_this_global_configuration_file'&gt;Open and edit this global configuration file&lt;/h5&gt;
+&lt;h5 id=&#39;open_and_edit_this_global_configuration_file&#39;&gt;Open and edit this global configuration file&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo vim /etc/vimrc&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id='add_some_personal_setting'&gt;Add some personal setting&lt;/h5&gt;
+&lt;h5 id=&#39;add_some_personal_setting&#39;&gt;Add some personal setting&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;set number  &amp;quot; show line number
 set ruler  &amp;quot; open status bar
@@ -265,7 +299,7 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>Geek productivity</title>
-                <description>&lt;p&gt;&lt;img alt='Geed' src='https://mail.google.com/mail/u/2/?ui=2&amp;amp;ik=d07b03b08e&amp;amp;view=att&amp;amp;th=13faf73d7326092c&amp;amp;attid=0.1&amp;amp;disp=emb&amp;amp;realattid=ii_13faf735ff4743c1&amp;amp;zw&amp;amp;atsh=1' /&gt;&lt;/p&gt;</description>
+                <description>&lt;p&gt;&lt;img alt=&#39;Geed&#39; src=&#39;https://mail.google.com/mail/u/2/?ui=2&amp;amp;ik=d07b03b08e&amp;amp;view=att&amp;amp;th=13faf73d7326092c&amp;amp;attid=0.1&amp;amp;disp=emb&amp;amp;realattid=ii_13faf735ff4743c1&amp;amp;zw&amp;amp;atsh=1&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/08/03/geek</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/03/geek</guid>
                 <pubDate>2013-08-03T00:00:00+02:00</pubDate>
@@ -273,17 +307,17 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>Android Develop Record(05) - View Pager</title>
-                <description>&lt;h1 id='introduction'&gt;Introduction&lt;/h1&gt;
+                <description>&lt;h1 id=&#39;introduction&#39;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;Here is a sample of viewpager, you can fork the sample project by clicking &lt;a href='https://github.com/jesusjzp/ViewPager'&gt;here&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;Here is a sample of viewpager, you can fork the sample project by clicking &lt;a href=&#39;https://github.com/jesusjzp/ViewPager&#39;&gt;here&lt;/a&gt; :&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Sample' src='http://media-cache-ec0.pinimg.com/736x/1f/d1/8a/1fd18a866baa03a287bd9d3e7ed2525e.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Sample&#39; src=&#39;http://media-cache-ec0.pinimg.com/736x/1f/d1/8a/1fd18a866baa03a287bd9d3e7ed2525e.jpg&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;With &lt;a href='http://developer.android.com/reference/android/support/v4/app/package-summary.html'&gt;android-support-v4&lt;/a&gt;, we can make more cool effects, such as view pager, action bar, etc.&lt;/p&gt;
+&lt;p&gt;With &lt;a href=&#39;http://developer.android.com/reference/android/support/v4/app/package-summary.html&#39;&gt;android-support-v4&lt;/a&gt;, we can make more cool effects, such as view pager, action bar, etc.&lt;/p&gt;
 
-&lt;h1 id='basic_structure'&gt;Basic structure&lt;/h1&gt;
+&lt;h1 id=&#39;basic_structure&#39;&gt;Basic structure&lt;/h1&gt;
 
-&lt;h2 id='layout'&gt;Layout&lt;/h2&gt;
+&lt;h2 id=&#39;layout&#39;&gt;Layout&lt;/h2&gt;
 
 &lt;p&gt;The main layout can be divided into two parts:&lt;/p&gt;
 
@@ -293,7 +327,7 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 &lt;li&gt;Images group. This group is for showing the small points.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id='action'&gt;Action&lt;/h2&gt;
+&lt;h2 id=&#39;action&#39;&gt;Action&lt;/h2&gt;
 
 &lt;p&gt;There are two main actions:&lt;/p&gt;
 
@@ -309,17 +343,17 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>Android Develop Record(04)</title>
-                <description>&lt;h2 id='threedays_crazy_programming'&gt;Three-day&amp;#8217;s crazy programming&lt;/h2&gt;
+                <description>&lt;h2 id=&#39;threedays_crazy_programming&#39;&gt;Three-day&amp;#8217;s crazy programming&lt;/h2&gt;
 
 &lt;p&gt;After three-day&amp;#8217;s crazy programming (&amp;gt;=40h), a little tired, but I learnt a lot.&lt;/p&gt;
 
-&lt;h2 id='ui'&gt;UI&lt;/h2&gt;
+&lt;h2 id=&#39;ui&#39;&gt;UI&lt;/h2&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='/assets/images/connexion.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;/assets/images/connexion.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='/assets/images/folder-et-subfolder.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;/assets/images/folder-et-subfolder.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='/assets/images/lecture-du-doc.png' /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;/assets/images/lecture-du-doc.png&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/08/02/Android-Develop-Record</link>
                 <guid>http://jesusjzp.github.com/blog/2013/08/02/Android-Develop-Record</guid>
                 <pubDate>2013-08-02T00:00:00+02:00</pubDate>
@@ -327,7 +361,7 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>Android Develop Record(03) - Margin and Padding</title>
-                <description>&lt;p&gt;&lt;img alt='Profile' src='http://www.w3schools.com/css/box-model.gif' /&gt;&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://www.w3schools.com/css/box-model.gif&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;做了顿晚饭，跟小汲聊了好久，上海这两天水深火热吧，高温，暴雨，挺怀念的。&lt;/p&gt;
 
@@ -353,9 +387,9 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>Android Develop Record</title>
-                <description>&lt;h3 id='doing'&gt;Doing&lt;/h3&gt;
+                <description>&lt;h3 id=&#39;doing&#39;&gt;Doing&lt;/h3&gt;
 
-&lt;h4 id='apisearch'&gt;API-search&lt;/h4&gt;
+&lt;h4 id=&#39;apisearch&#39;&gt;API-search&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Add two new methods &lt;em&gt;industries&lt;/em&gt; and &lt;em&gt;countries&lt;/em&gt;&lt;/li&gt;
@@ -363,7 +397,7 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 &lt;li&gt;Debug&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id='android_corporate'&gt;Android Corporate&lt;/h4&gt;
+&lt;h4 id=&#39;android_corporate&#39;&gt;Android Corporate&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Actionbar Search function&lt;/li&gt;
@@ -375,7 +409,7 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>Android UI design note</title>
-                <description>&lt;p&gt;&lt;img alt='Android_UI' src='http://developer.android.com/design/media/principles_get_to_know_me.png' /&gt;&lt;/p&gt;</description>
+                <description>&lt;p&gt;&lt;img alt=&#39;Android_UI&#39; src=&#39;http://developer.android.com/design/media/principles_get_to_know_me.png&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/30/Android-UI-Design-Note</link>
                 <guid>http://jesusjzp.github.com/blog/2013/07/30/Android-UI-Design-Note</guid>
                 <pubDate>2013-07-30T00:00:00+02:00</pubDate>
@@ -397,7 +431,7 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 	&lt;p&gt;Let the hacking begin.&lt;/p&gt;
 	&lt;small&gt;Mark zuckerberg&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://fmn.rrimg.com/fmn064/20130718/1705/p/m2w300h300q85lt_original_RCCV_0b2000000da11190.jpg' /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://fmn.rrimg.com/fmn064/20130718/1705/p/m2w300h300q85lt_original_RCCV_0b2000000da11190.jpg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/26/hope</link>
                 <guid>http://jesusjzp.github.com/blog/2013/07/26/hope</guid>
                 <pubDate>2013-07-26T00:00:00+02:00</pubDate>
@@ -405,9 +439,9 @@ set smartindent  &amp;quot; set smart indent&lt;/code&gt;&lt;/pre&gt;</descripti
 
         <item>
                 <title>phpunit test (1)</title>
-                <description>&lt;p&gt;&lt;img alt='phpunitLogo' src='http://clivemind.com/wp-content/uploads/2012/07/logo.png' /&gt;&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img alt=&#39;phpunitLogo&#39; src=&#39;http://clivemind.com/wp-content/uploads/2012/07/logo.png&#39; /&gt;&lt;/p&gt;
 
-&lt;h3 id='some_frequently_used_assertions'&gt;Some frequently used assertions&lt;/h3&gt;
+&lt;h3 id=&#39;some_frequently_used_assertions&#39;&gt;Some frequently used assertions&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;AssertTrue/AssertFalse    断言是否为真值还是假
 AssertEquals    判断输出是否和预期的相等
@@ -429,7 +463,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 	&lt;p&gt;We are uncovering better ways of developing software by doing it and helping others do it.&lt;/p&gt;
 	&lt;small&gt;agilemanifesto.org/&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;h2 id='we_follow_these_principles'&gt;We follow these principles&lt;/h2&gt;
+&lt;h2 id=&#39;we_follow_these_principles&#39;&gt;We follow these principles&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;
@@ -488,30 +522,30 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
         <item>
                 <title>CouchSurfing with Sohee Kong</title>
                 <description>&lt;blockquote&gt;
-	&lt;p&gt;Happiest memory in Lyon, I'm gonna miss u.&lt;/p&gt;
+	&lt;p&gt;Happiest memory in Lyon, I&#39;m gonna miss u.&lt;/p&gt;
 	&lt;small&gt;Zhipeng JIANG&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://media-cache-ak2.pinimg.com/736x/be/73/9e/be739e01ac3bbcb7f5e685b300e65e11.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://media-cache-ak2.pinimg.com/736x/be/73/9e/be739e01ac3bbcb7f5e685b300e65e11.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It&amp;#8217;s the most happiest memory for my 3-month internship in Lyon. It has been long long time that I haven&amp;#8217;t felt so open and comfortable.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='http://www.nileguide.com/destination/blog/lyon/files/2010/07/Paddle-pools-on-Les-Berges-du-Rhone.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://www.nileguide.com/destination/blog/lyon/files/2010/07/Paddle-pools-on-Les-Berges-du-Rhone.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We started from Centre Berthelot and walked along the river Rhône, taking about her experience in US, the culture difference, her Paris tour, and something about her family. The river is half blue and half green, without a tiny rubbish. The wind is gentle and I found her is so beautiful.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='http://farm6.staticflickr.com/5058/5456089848_b115c7b990_z.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://farm6.staticflickr.com/5058/5456089848_b115c7b990_z.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Around the Skatepark de Guillotière, we watched those guys playing bicycle and roller skating, that&amp;#8217;s really amazing! Although I have watched that for million times, yestoday it was quite different. The sun felled down, giving us soft sunshine and a pure blue sky.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='http://www.eurexpo.com/IMG/jpg/Place-Bellecour-Fourviere.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://www.eurexpo.com/IMG/jpg/Place-Bellecour-Fourviere.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After that, we went to the playground Bellecour, well, personally, it is not like what her name describes. Belle is far more than beautiful, it means elegant, charming and sort of mysterious. By passing Bellecour, we arrived ONLYLYON, the symbol of lyon. I took some pics for her. We came across a little boy, he took the place of “O”, where I thought could be a good idea to take a photo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='http://mw2.google.com/mw-panoramio/photos/medium/14616326.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://mw2.google.com/mw-panoramio/photos/medium/14616326.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Along the rode of St-Jean, we entered the old town of Lyon. There were a lot of bistros and restos. Before the Musée Miniature et Cinéma, we were shocked by those tiny miniature, they were really cute!&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='http://0.tqn.com/d/goeurope/1/0/-/k/1/lyon-miniatures-library.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://0.tqn.com/d/goeurope/1/0/-/k/1/lyon-miniatures-library.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Notre-Dame is at the top of hill, along those small ladders, we stared the climbing. From the top, all the Lyon is inside your view.&lt;/p&gt;
 
@@ -527,11 +561,11 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 	&lt;p&gt;出国留学要是不会做饭那可就亏大了&lt;/p&gt;
 	&lt;small&gt;蒋志鹏&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://images.3158.cn/data/attachment/sichuan/article/2013/04/17/ed0d5bc1fb9eac2bb1571f72e74d1186.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://images.3158.cn/data/attachment/sichuan/article/2013/04/17/ed0d5bc1fb9eac2bb1571f72e74d1186.jpg&#39; /&gt;&lt;/p&gt;
 
-&lt;h1 id='id6'&gt;重庆正宗特产周君记水煮肉片调料&lt;/h1&gt;
+&lt;h1 id=&#39;id6&#39;&gt;重庆正宗特产周君记水煮肉片调料&lt;/h1&gt;
 
-&lt;h3 id='id7'&gt;食用方法&lt;/h3&gt;
+&lt;h3 id=&#39;id7&#39;&gt;食用方法&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;
@@ -551,7 +585,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id='id8'&gt;配料&lt;/h3&gt;
+&lt;h3 id=&#39;id8&#39;&gt;配料&lt;/h3&gt;
 
 &lt;p&gt;植物油、豆瓣、辣椒、食盐、老姜、大蒜、花生、豆豉酱、味精、香辛料、花椒、白砂糖、黄酒、高鲜精&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/20/%E6%B0%B4%E7%85%AE%E8%82%89%E7%89%87</link>
@@ -565,7 +599,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 	&lt;p&gt;Let the hacking begin.&lt;/p&gt;
 	&lt;small&gt;Mark zuckerberg&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/1069924_548809328490388_1717211139_n.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/1069924_548809328490388_1717211139_n.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;怎么总结这一周呐，总的来说，没什么特别的，没接触到新的知识。&lt;/p&gt;
 
@@ -585,7 +619,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 	&lt;p&gt;Let the hacking begin.&lt;/p&gt;
 	&lt;small&gt;Mark zuckerberg&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://fmn.rrimg.com/fmn064/20130718/1705/p/m2w300h300q85lt_original_RCCV_0b2000000da11190.jpg' /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://fmn.rrimg.com/fmn064/20130718/1705/p/m2w300h300q85lt_original_RCCV_0b2000000da11190.jpg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/18/HOPE</link>
                 <guid>http://jesusjzp.github.com/blog/2013/07/18/HOPE</guid>
                 <pubDate>2013-07-18T00:00:00+02:00</pubDate>
@@ -597,7 +631,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 	&lt;p&gt;Let the hacking begin.&lt;/p&gt;
 	&lt;small&gt;Mark zuckerberg&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/420/?sURL=http://offlinehbpl.hbpl.co.uk/News/OKM/02E9B256-FDA4-AFFA-4FB6C963DA46CC8A.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/420/?sURL=http://offlinehbpl.hbpl.co.uk/News/OKM/02E9B256-FDA4-AFFA-4FB6C963DA46CC8A.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;今天试用了一下lycamobile的sim卡，激活的步骤花了好多时间，这个人机交互设计得真是很糟糕，选择一个街道地址网页就要重新刷一遍，我这里的渣网速啊。&lt;/p&gt;
 
@@ -615,7 +649,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 	&lt;p&gt;Let the hacking begin.&lt;/p&gt;
 	&lt;small&gt;Mark zuckerberg&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://postfiles10.naver.net/20111230_265/ultra567_1325183222297Etq5q_PNG/let_the_hacking_begin.png?type=w2' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://postfiles10.naver.net/20111230_265/ultra567_1325183222297Etq5q_PNG/let_the_hacking_begin.png?type=w2&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我想写些什么，最近实习很不爽，老板布置的任务我已经好几天没有完成了。虽然老板也说这个很难，但写不出来心里还是很不爽的。&lt;/p&gt;
 
@@ -637,27 +671,27 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
   &lt;p&gt;It almost freaks me out&lt;/p&gt;
   &lt;small&gt;Zhipeng JIANG&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='http://blog.learnleo.com/wp-content/uploads/2013/06/FreakOut.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;http://blog.learnleo.com/wp-content/uploads/2013/06/FreakOut.jpg&#39; /&gt;&lt;/p&gt;
 
-&lt;h1 id='solid_'&gt;SOLID (面向对象设计)&lt;/h1&gt;
+&lt;h1 id=&#39;solid_&#39;&gt;SOLID (面向对象设计)&lt;/h1&gt;
 
-&lt;h2 id='s_'&gt;S 单一功能原则&lt;/h2&gt;
+&lt;h2 id=&#39;s_&#39;&gt;S 单一功能原则&lt;/h2&gt;
 
 &lt;p&gt;认为对象应该仅具有一种单一功能的概念。&lt;/p&gt;
 
-&lt;h2 id='o_'&gt;O 开闭原则&lt;/h2&gt;
+&lt;h2 id=&#39;o_&#39;&gt;O 开闭原则&lt;/h2&gt;
 
 &lt;p&gt;认为“软件体应该是对于扩展开放的，但是对于修改封闭的”的概念。&lt;/p&gt;
 
-&lt;h2 id='l_'&gt;L 里氏替换原则&lt;/h2&gt;
+&lt;h2 id=&#39;l_&#39;&gt;L 里氏替换原则&lt;/h2&gt;
 
 &lt;p&gt;认为“程序中的对象应该是可以在不改变程序正确性的前提下被它的子类所替换的”的概念。参考 契约式设计。&lt;/p&gt;
 
-&lt;h2 id='i_'&gt;I 接口隔离原则&lt;/h2&gt;
+&lt;h2 id=&#39;i_&#39;&gt;I 接口隔离原则&lt;/h2&gt;
 
 &lt;p&gt;认为“多个特定客户端接口要好于一个宽泛用途的接口”&lt;span&gt;5&lt;/span&gt; 的概念。&lt;/p&gt;
 
-&lt;h2 id='d_'&gt;D 依赖反转原则&lt;/h2&gt;
+&lt;h2 id=&#39;d_&#39;&gt;D 依赖反转原则&lt;/h2&gt;
 
 &lt;p&gt;认为一个方法应该遵从“依赖于抽象而不是一个实例”&lt;span&gt;5&lt;/span&gt; 的概念。&lt;/p&gt;
 
@@ -670,10 +704,10 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
         <item>
                 <title>Code refactoring (1)</title>
                 <description>&lt;blockquote&gt;
-  &lt;p&gt;I'm refactoring my code in Bastille Day&lt;/p&gt;
+  &lt;p&gt;I&#39;m refactoring my code in Bastille Day&lt;/p&gt;
   &lt;small&gt;Zhipeng JIANG&lt;/small&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt='Profile' src='https://upload.wikimedia.org/wikipedia/commons/b/bf/Fireworks_on_the_Danube_Bastille_Day_2008.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;https://upload.wikimedia.org/wikipedia/commons/b/bf/Fireworks_on_the_Danube_Bastille_Day_2008.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;开发人员可能听到过&amp;#8221;bad smell&amp;#8221;这个词，这个词用在软件编码中是什么意思呢？ 代码还有smell吗？当然没有，正如计算机病毒，bug等词一样，这只是个形象的说法。这个词在这里的意思是代码实现了需求，但是代码却不精炼，冗余，结构混乱，难读懂，难维护，难扩展等等。与之相对应的一个词是&amp;#8221;refactor&amp;#8221;，即代码重构。我们在看些外国人写的程序时可以发现，他们的代码里一般会定义大量的类、接口、方法，类与类，类与接口之间很多是继承和实现的关系，方法的代码行数很少，超过20行代码的方法不多，看他们的代码感觉最多的就是方法之间的调来调去，不像我们的代码，一个方法下来几十上百甚至两三百行都是最基本的语句构成，很少调用自己的方法。两相比较，可以看出，前者在结构上更清晰，通过类视图就可看出设计意图，并且总的代码量不会高于后者，而后者代码量庞大，代码冗余现象严重，结构不清晰，很难维护，如要修改某个错误，可能涉及到要修改的代码点很多，这样后来的维护者就很头疼了。造成这种状况的原因有这样一些：&lt;/p&gt;
 
@@ -709,7 +743,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 
         <item>
                 <title>Timestamp difference between php and elasticsearch</title>
-                <description>&lt;h1 id='attention'&gt;Attention&lt;/h1&gt;
+                <description>&lt;h1 id=&#39;attention&#39;&gt;Attention&lt;/h1&gt;
 
 &lt;p&gt;In php: the minimum time unit is second; In ES: the minimum time unit is milesecond!&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/12/PHP-and-Elasticsearch</link>
@@ -719,9 +753,9 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 
         <item>
                 <title>Jekyll simple tutorial</title>
-                <description>&lt;h1 id='id2'&gt;区块元素&lt;/h1&gt;
+                <description>&lt;h1 id=&#39;id2&#39;&gt;区块元素&lt;/h1&gt;
 
-&lt;h2 id='id3'&gt;段落和换行&lt;/h2&gt;
+&lt;h2 id=&#39;id3&#39;&gt;段落和换行&lt;/h2&gt;
 
 &lt;p&gt;一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。&lt;/p&gt;
 
@@ -731,7 +765,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 
 &lt;p&gt;的确，需要多费点事（多加空格）来产生 &lt;br /&gt; ，但是简单地「每个换行都转换为 &lt;br /&gt;」的方法在 Markdown 中并不适合， Markdown 中 email 式的 区块引用 和多段落的 列表 在使用换行来排版的时候，不但更好用，还更方便阅读。&lt;/p&gt;
 
-&lt;h2 id='id4'&gt;标题&lt;/h2&gt;
+&lt;h2 id=&#39;id4&#39;&gt;标题&lt;/h2&gt;
 
 &lt;p&gt;Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。&lt;/p&gt;
 
@@ -763,7 +797,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 &lt;p&gt;### 这是 H3 ######&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id='_blockquotes'&gt;区块引用 Blockquotes&lt;/h2&gt;
+&lt;h2 id=&#39;_blockquotes&#39;&gt;区块引用 Blockquotes&lt;/h2&gt;
 
 &lt;p&gt;Markdown 标记区块引用是使用类似 email 中用 &amp;gt; 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 &amp;gt; ：&lt;/p&gt;
 
@@ -802,7 +836,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 &lt;p&gt;引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;h2 id='id5'&gt;这是一个标题。&lt;/h2&gt;
+&lt;h2 id=&#39;id5&#39;&gt;这是一个标题。&lt;/h2&gt;
 
 &lt;p&gt;1. 这是第一行列表项。 2. 这是第二行列表项。&lt;/p&gt;
 
@@ -813,7 +847,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 
 &lt;p&gt;to be complete &amp;#8230;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Profile' src='/assets/images/profile.jpeg' /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#39;Profile&#39; src=&#39;/assets/images/profile.jpeg&#39; /&gt;&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/10/jekyll-tuto</link>
                 <guid>http://jesusjzp.github.com/blog/2013/07/10/jekyll-tuto</guid>
                 <pubDate>2013-07-10T00:00:00+02:00</pubDate>
@@ -831,7 +865,7 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 &lt;li&gt;nothing special&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='user_group_problem_of_apache_for_symfony'&gt;User group problem of apache for symfony&lt;/h3&gt;
+&lt;h3 id=&#39;user_group_problem_of_apache_for_symfony&#39;&gt;User group problem of apache for symfony&lt;/h3&gt;
 
 &lt;p&gt;In the file /etc/httpd/conf/httpd.conf We should change the user and group to the local user and group.&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/10/intern-record</link>
@@ -875,13 +909,13 @@ AssertRegExp    根据正则表达式判断&lt;/code&gt;&lt;/pre&gt;</descriptio
 &lt;/blockquote&gt;
 &lt;p&gt;Welcome to visit my first blog in Github!&lt;/p&gt;
 
-&lt;p&gt;With the help of &lt;a href='http://github.com'&gt;GitHub&lt;/a&gt;, &lt;a href='http://pages.github.com/'&gt;GitHub Pages&lt;/a&gt;, &lt;a href='http://hover.com'&gt;Hover&lt;/a&gt; and &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;, jesusjzp.github.com is now up and running!&lt;/p&gt;
+&lt;p&gt;With the help of &lt;a href=&#39;http://github.com&#39;&gt;GitHub&lt;/a&gt;, &lt;a href=&#39;http://pages.github.com/&#39;&gt;GitHub Pages&lt;/a&gt;, &lt;a href=&#39;http://hover.com&#39;&gt;Hover&lt;/a&gt; and &lt;a href=&#39;https://github.com/mojombo/jekyll&#39;&gt;Jekyll&lt;/a&gt;, jesusjzp.github.com is now up and running!&lt;/p&gt;
 
-&lt;p&gt;This project has been my first use of &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt; and the &lt;a href='https://github.com/Shopify/liquid/wiki'&gt;Liquid&lt;/a&gt; template language and so far everything has been very straightforward.&lt;/p&gt;
+&lt;p&gt;This project has been my first use of &lt;a href=&#39;https://github.com/mojombo/jekyll&#39;&gt;Jekyll&lt;/a&gt; and the &lt;a href=&#39;https://github.com/Shopify/liquid/wiki&#39;&gt;Liquid&lt;/a&gt; template language and so far everything has been very straightforward.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://jekyllbootstrap.com'&gt;Jekyll Bootstrap&lt;/a&gt; made it super easy to choose a &lt;a href='http://themes.jekyllbootstrap.com'&gt;theme&lt;/a&gt; and checkout a copy of the code to my &lt;a href='https://github.com/dsposito/dsposito.github.com'&gt;personal GitHub page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#39;http://jekyllbootstrap.com&#39;&gt;Jekyll Bootstrap&lt;/a&gt; made it super easy to choose a &lt;a href=&#39;http://themes.jekyllbootstrap.com&#39;&gt;theme&lt;/a&gt; and checkout a copy of the code to my &lt;a href=&#39;https://github.com/dsposito/dsposito.github.com&#39;&gt;personal GitHub page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;A few &lt;a href='http://www.iterm2.com'&gt;commands&lt;/a&gt; later and I&amp;#8217;m blogging again for the first time in &lt;a href='http://www.xanga.com'&gt;years&lt;/a&gt; and looking forward to sharing my personal and professional experiences, thoughts and projects with the rest of the world.&lt;/p&gt;</description>
+&lt;p&gt;A few &lt;a href=&#39;http://www.iterm2.com&#39;&gt;commands&lt;/a&gt; later and I&amp;#8217;m blogging again for the first time in &lt;a href=&#39;http://www.xanga.com&#39;&gt;years&lt;/a&gt; and looking forward to sharing my personal and professional experiences, thoughts and projects with the rest of the world.&lt;/p&gt;</description>
                 <link>http://jesusjzp.github.com/blog/2013/07/08/blogging-with-jekyll</link>
                 <guid>http://jesusjzp.github.com/blog/2013/07/08/blogging-with-jekyll</guid>
                 <pubDate>2013-07-08T00:00:00+02:00</pubDate>
