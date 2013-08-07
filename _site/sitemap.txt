@@ -10,6 +10,7 @@ http://jesusjzp.github.com/pages.html
 http://jesusjzp.github.com/categories.html
 http://jesusjzp.github.com/index.html
 
+http://jesusjzp.github.com/blog/2013/08/07/jekyll-environment-install
 http://jesusjzp.github.com/blog/2013/08/07/Android-Develop-Record
 http://jesusjzp.github.com/blog/2013/08/06/Fedora-install-setting
 http://jesusjzp.github.com/blog/2013/08/06/Android-Develop-Record

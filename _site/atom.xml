@@ -4,13 +4,74 @@
  <title>Zhipeng JIANG</title>
  <link href="http://jesusjzp.github.com/" rel="self"/>
  <link href="http://jesusjzp.github.com"/>
- <updated>2013-08-07T23:25:33+02:00</updated>
+ <updated>2013-08-07T23:52:16+02:00</updated>
  <id>http://jesusjzp.github.com</id>
  <author>
    <name>Zhipeng JIANG</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Local Jekyll Environment Installation</title>
+   <link href="http://jesusjzp.github.com/blog/2013/08/07/jekyll-environment-install"/>
+   <updated>2013-08-07T00:00:00+02:00</updated>
+   <id>http://jesusjzp.github.com/blog/2013/08/07/jekyll-environment-install</id>
+   <content type="html">&lt;h1 id=&#39;local_jekyll_environment_installation&#39;&gt;Local Jekyll Environment Installation&lt;/h1&gt;
+
+&lt;p&gt;If you have installed Ruby ou Rubygems, you can jump to &amp;#8216;gem install&amp;#8217; directly. Besides, all the installation is under Fedora 19.&lt;/p&gt;
+
+&lt;h2 id=&#39;install_ruby_and_rubygems&#39;&gt;Install Ruby and Rubygems&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install ruby-devel
+sudo yum install rubygems&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#39;install_gcc&#39;&gt;Install gcc&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install gcc&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#39;install_jekyll&#39;&gt;Install jekyll&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install jekyll&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#39;install_pygments&#39;&gt;Install pygments&lt;/h2&gt;
+
+&lt;p&gt;It is a tool to enable code highlight.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install python-pygments&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#39;debug_and_local_test&#39;&gt;Debug and local test&lt;/h1&gt;
+
+&lt;h2 id=&#39;debug&#39;&gt;Debug&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll build&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have some bug, you can use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll build --trace&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to trace the bug.&lt;/p&gt;
+
+&lt;h2 id=&#39;local_test&#39;&gt;Local test&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then in your browser, type in&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://localhost:4000&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Reference&lt;/em&gt; : http://www.soimort.org/posts/101/&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt; : In this reference, there are some commands are too old to execute, as jekyll has updated recently. For example, rdiscount is no longer working,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll --rdiscount&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will get this error,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Deprecation: Jekyll now uses subcommands instead of just switches. Run \`jekyll help\&amp;#39; to find out more.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please refer to the &lt;a href=&#39;http://jekyllrb.com/docs/installation/&#39;&gt;official site&lt;/a&gt; for more details about installation and configuration.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Android Develop Record(08) - Http Get Request</title>
