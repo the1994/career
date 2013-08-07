@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vim configuration for all user"
+title: "Basic setting for Fedora installation"
 description: ""
 category: "Programming"
 tags: ["Vim"]
