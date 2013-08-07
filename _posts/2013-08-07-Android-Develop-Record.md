@@ -61,3 +61,7 @@ public class HttpGetMethod {
 {% endhighlight %}
 
 **Attention** : HttpGet should be place in another thread instead of main thread !!!!!!!!!!! Because in Android 4.0+, this operation is forbidden. 
+
+**PS** This girl reminds me of someone
+
+![Forfun](http://hd.wallpaperswide.com/thumbs/pretty_girl-t2.jpg)
