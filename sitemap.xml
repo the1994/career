@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://jesusjzp.github.io/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/about.html</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog.html</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/08/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/07/jekyll-environment-install/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/07/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/06/Fedora-install-setting/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/06/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/05/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/04/disqus/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/03/vim/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/03/geek/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/03/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/02/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/08/01/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/31/Android-Develop-Record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/30/Android-UI-Design-Note/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/29/za/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/26/hope/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/24/phpunit-test/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/23/Principles-behind-the-Agile-Manifesto/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/22/CS-with-sohee/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/20/水煮肉片/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/19/Friday-Again/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/18/HOPE/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/17/coding/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/16/coding/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/15/code-refactoring/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/14/code-refactoring/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/12/PHP-and-Elasticsearch/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/10/jekyll-tuto/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/10/intern-record/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/09/to-my-roommates/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/blog/2013/07/08/blogging-with-jekyll/</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/categories.html</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://jesusjzp.github.io/tags.html</loc>
+  <lastmod>2013-08-09T00:19:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>
