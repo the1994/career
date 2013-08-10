@@ -50,6 +50,14 @@ Open `/etc/sysconfig/selinux` and modify the command below:
     yum install gnome-tweak-tool
     ...
 
+### Chinese Input Method 安装中文输入法
+
+在fedora 19里安装中文输入法非常简单快捷，这里要感谢大神 Wu Peng 以及各位开发者。安装的命令如下，
+
+    sudo yum install ibus ibus-pinyin
+
+安装完成之后，在application里搜input就可以看到Region and Language，在里面添加中文输入法以及唤醒快捷键即可。附加一句，这个版本的ibus做得很赞，个人觉得不必fxitc差。
+
 ### Sublime text
 
 Download the latest version of Sublime text, unzip it and new a desktop shortcuts.
