@@ -34,6 +34,12 @@ At last, change the file rights to be executable
 
 In short cut menu, add a new shortcut by setting *gnome-terminel* with Ctrl+Alt+T.
 
+## Disable selinux
+
+Open `/etc/sysconfig/selinux` and modify the command below:
+
+	SELINUX=disabled
+
 ## Installation
 
 ### Basic tools
@@ -64,11 +70,20 @@ Then add this desktop shortcuts to */usr/share/application*
 
 It needs to download the rpm from official website.
 
+### KVM virtual machine
+
+It is good idea to run windows inside Fedora!
+
+You can choose KVM, it is easy enough by comparing with VirtualBox.
+
+	sudo yum -yinstall qemu-kvm libvirt virt-manager
+	sudo modprobe kvm-intel #ensure that you are using intel CPU
+
 ## Appearence
 
 ### Font
 
-There are pre-built packages for Fedora users. Run these commands instead of installing these files manually. It is recommended to restart your system after installation. If you've already run these commands before, then your normal system updates will keep your packages up to date.
+There are pre-built packages for Fedora users. Run these commands instead of installing these files manually. It is recommended to restart your system after installation. If you have already run these commands before, then your normal system updates will keep your packages up to date.
 
     sudo rpm -Uvh http://www.infinality.net/fedora/linux/infinality-repo-1.0-1.noarch.rpm 
     sudo yum install freetype-infinality fontconfig-infinality
@@ -88,7 +103,7 @@ Find the panel section and modify the code like this:
         height: 1.86em;
     }
 
-Here's my desktop
+Here is my desktop
 
 ![desktop](http://media-cache-ak0.pinimg.com/736x/81/bb/8d/81bb8dff8d7bc71f905ec09e69119784.jpg)
 
