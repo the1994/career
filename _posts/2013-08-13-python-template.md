@@ -39,7 +39,7 @@ As you can see, those parameters after funcion are outputed. It is like argc, ar
 
 In fact, by comparing with loading `.py` template, loading `.pyc` is faster.
 
-## __name__ template
+## \_\_name\_\_ template
 
 For example,
 
