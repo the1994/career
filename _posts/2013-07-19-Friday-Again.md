@@ -3,7 +3,7 @@ layout: post
 title: "又是星期五"
 description: ""
 category: "Programming"
-tags: ["other"]
+tags: ["Other"]
 ---
 
 {% include JB/setup %}

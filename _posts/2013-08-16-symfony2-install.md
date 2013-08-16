@@ -75,3 +75,40 @@ Create your symfony project
 
 Here api-article is the name of project, 2.3 is the latest version of symfony.
 
+If everything goes well, you can continue to update or install vendors and configure caches and logs.
+
+    $ php ../composer.phar update
+	$ setfacl -R -m u:apache:rwx -m u:`whoami`:rwx app/cache app/logs
+	$ setfacl -dR -m u:apache:rwx -m u:`whoami`:rwx app/cache app/logs
+	$ sudo ln -s ~/[project path]/web /var/www/html/[project name]
+	$ sudo setfacl -m u:apache:x /home/`whoami`
+
+But, if unluckly, you came across with some problem during the update, such as this,
+
+    [UnexpectedValueException]                                                   
+	'/home/zhipeng/projects/sites/api-article/vendor/symfony/icu/Symfony/Component/Icu/70ba4a12bda6a6bd714ec1cddd087038.0' is not a zip archive.
+
+I'm not sure where is the problem, some one told me it is because the cache of composer, some one said it is because the problem of symfony version. Well, I have not  found the solution. So at last I downloaded the tar pkg **with vendors** from [website](http://symfony.com/download). Unpack it and continue your command from `setfacl`,
+
+	$ setfacl -R -m u:apache:rwx -m u:`whoami`:rwx app/cache app/logs
+	$ setfacl -dR -m u:apache:rwx -m u:`whoami`:rwx app/cache app/logs
+	$ sudo ln -s ~/[project path]/web /var/www/html/[project name]
+	$ sudo setfacl -m u:apache:x /home/`whoami`
+
+Now you can test your project from this page, for me it is [http://localhost/api-article/app_dev.php/](http://localhost/api-article/app_dev.php/). It depends on the path of your soft lien in `/var/www/html/[project name]`.
+
+## Configure SELINUX
+
+SELINUX is the security policies manager that can prevent the Apache server to access to a home directory, or to successfully write into the app/cache and app/logs directories.
+
+We have two options:
+
+-  Disable SELINUX; It’s an option, although not the optimal for those that like of security on their systems. You disable SELINUX following this [tutorial](http://ashu-geek.blogspot.com.es/2011/12/how-to-disable-selinux-on-fedora-16.html).
+
+-  If you like the SELINUX protection, these are the commands you need to type to allow the Apache server to access on R/W to our project directories:
+
+	$ sudo setsebool -P httpd_enable_homedirs true
+	$ sudo setsebool -P httpd_read_user_content true
+	$ sudo setsebool allow_httpd_anon_write true
+	$ sudo chcon -t chcon -t public_content_rw_t app/cache
+	$ sudo chcon -t chcon -t public_content_rw_t app/logs

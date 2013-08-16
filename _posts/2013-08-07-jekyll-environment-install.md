@@ -3,7 +3,7 @@ layout: post
 title: "Local Jekyll Environment Installation"
 description: ""
 category: "Programming"
-tags: ["jekyll"]
+tags: ["Jekyll"]
 ---
 
 # Local Jekyll Environment Installation

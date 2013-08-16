@@ -3,7 +3,7 @@ layout: post
 title: "Intern record"
 description: ""
 category: "Programming"
-tags: ["others"]
+tags: ["Other"]
 ---
 
 - **Modify the interfaces of APIs**

@@ -3,7 +3,7 @@ layout: post
 title: "Code refactoring (2)"
 description: "The second step of code refactoring"
 category: "Programming"
-tags: ["php"]
+tags: ["PHP"]
 ---
 
 <blockquote>

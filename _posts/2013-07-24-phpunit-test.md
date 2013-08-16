@@ -3,7 +3,7 @@ layout: post
 title: "phpunit test (1)"
 description: ""
 category: "Programming"
-tags: ["PHP", "phpunit"]
+tags: ["PHP", "PHPUNIT"]
 ---
 
 {% include JB/setup %}

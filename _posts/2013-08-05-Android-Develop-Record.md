@@ -3,7 +3,7 @@ layout: post
 title: "Android Develop Record(06) - Action Bar"
 description: ""
 category: "Programming"
-tags: ["android"]
+tags: ["Android"]
 ---
 
 # Action Bar
