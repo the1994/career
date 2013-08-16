@@ -3,7 +3,7 @@ layout: post
 title: "CouchSurfing with Sohee Kong"
 description: ""
 category: "Life"
-tags: ["other"]
+tags: ["Life"]
 ---
 
 {% include JB/setup %}
