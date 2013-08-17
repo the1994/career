@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Symfony2 (2) - 利用NelmioApiDocBundle自动生成API/DOC(译)"
+title: "Symfony2 (2) - NelmioApiDocBundle自动生成文档(译)"
 description: "NelmioApiDocBundle是一个开源的Symfony组建，能够自动生成每个bundle以及内部每个action的document，并支持sandbox测试，非常方便api开发"
 category: "Programming"
 tags: ["Symfony2", "PHP"]
