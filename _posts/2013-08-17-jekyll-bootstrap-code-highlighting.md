@@ -1,7 +1,7 @@
 ---
 layout: post
-title: jekyll-bootstrap添加代码高亮
-category: javascript
+title: Jekyll-bootstrap添加代码高亮
+category: "Javascript"
 tags: ["Jekyll", "Javascript"]
 description: "jekyll bootstarp 写博文, 让markdown支持代码高亮"
 ---
