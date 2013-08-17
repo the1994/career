@@ -60,8 +60,8 @@ Github的地址是 [https://github.com/nelmio/NelmioApiDocBundle](https://github
 
 这个bundle为你的每个controller提供了`ApiDoc()`annotation
 
-``` php
-<?php
+<pre class="prettyprint linenums">
+&lt;?php
 
 namespace Your\Namespace;
 
@@ -99,7 +99,7 @@ class YourController extends Controller
     }
 }
 ?>
-```
+</pre>
 
 在注释部分，有以下几个属性我们可以使用:
 
@@ -119,8 +119,8 @@ class YourController extends Controller
 
 * `statusCodes`: 状态码，如404，500等。比如下面的代码，
 
-``` php
-<?php
+<pre class="prettyprint linenums">
+&lt;?php
 
 class YourController
 {
@@ -141,8 +141,7 @@ class YourController
         // ...
     }
 }
-?>
-```
+</pre>    
 
 这个bundle也可以通过定义的路由来获取信息，比如`requirements`, `pattern`, 等等，所以为了最好地使用这个bundle，你应该严格定义每个函数的requirements等信息。
 
