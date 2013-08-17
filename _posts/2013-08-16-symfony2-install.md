@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Symfony2 installation and configuration"
+title: "Symfony2 (0) - installation and configuration"
 description: "Symfony2 installation and configuration in Fedora19, including the installation of apache, php, MySQL server, phpMyAdmin, composer and other tools"
 category: "Programming"
 tags: ["Symfony2", "PHP", "MySQL", "Fedora"]
