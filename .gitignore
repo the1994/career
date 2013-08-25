@@ -2,3 +2,5 @@ _posts/2013-08-06-Markdown-document-sample.md
 _posts/*.md~
 _posts/*.md.swp
 _site/*
+
+*.html.wap
