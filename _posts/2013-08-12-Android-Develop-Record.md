@@ -27,25 +27,26 @@ Accidentally, for the time being there is no "api-users" for the android applica
 
 # Code
 
-	import java.io.BufferedReader;
-	import java.io.IOException;
-	import java.io.InputStreamReader;
-	import java.net.HttpURLConnection;
-	import java.net.MalformedURLException;
-	import java.net.URL;
+<pre class="prettyprint linenums">
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-	import org.apache.http.HttpResponse;
-	import org.apache.http.auth.UsernamePasswordCredentials;
-	import org.apache.http.client.CookieStore;
-	import org.apache.http.client.methods.HttpGet;
-	import org.apache.http.impl.auth.BasicScheme;
-	import org.apache.http.impl.client.AbstractHttpClient;
-	import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.HttpResponse;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CookieStore;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.auth.BasicScheme;
+import org.apache.http.impl.client.AbstractHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
 
-	import android.util.Log;
+import android.util.Log;
 
-	public class HttpGetMethod {
-		
+public class HttpGetMethod {
+
 		public String getFoldersStats(String username, String password, String action) {
 			String res = "";
 			try {
@@ -75,5 +76,19 @@ Accidentally, for the time being there is no "api-users" for the android applica
 			}
 			return res;
 		}
-	}
+}
+</pre>
 
+* * * 
+
+# Notes
+
+因为经常忘记怎么用java代码取资源文件，这里记录一下吧，省得以后在网上乱找。
+
+比方说，某个textview的控件tv_username，想设置为某个string.xml文件里的值
+
+<pre class="prettyprint linenums">
+tv_username.setText(context.getResources().getString(R.string.username);
+</pre>
+
+-EOF-
