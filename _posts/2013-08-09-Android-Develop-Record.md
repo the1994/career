@@ -29,3 +29,15 @@ If you want to access SQLite database by `adb shell` from terminal, please make 
 For example, I have a table named as "folder"
 
     .schema folder
+
+**3) Get limit rows for each query**
+
+If you only need 20 results for each query,
+
+    select * from [tablename] limit 20;
+
+**4) Get random results**
+
+    select * from [tablename] order by random();
+
+
