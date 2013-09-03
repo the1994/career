@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Algorithm (01) - Classic DP problem"
-description: "Algorithm and data struction training serie. This chapter includs classic DP Problem"
+title: "Algorithm (01) - Classical DP problem"
+description: "Algorithm and data struction training serie. This chapter includs classical DP Problem"
 category: "Programming"
-tags: ["Algorithm"]
+tags: ["Algorithm", "Python"]
 ---
 
 Well, I see, I'm not good at algorithm. But it would not be too late if I start right now.
@@ -80,4 +80,4 @@ print 'res is', res
 
 </pre>
 
-**More information can be found in my [Github](https://github.com/jesusjzp/python_training/blob/master/01_dp_problem.py)**
+**More information can be found in my [Github](https://github.com/jesusjzp/python_training/)**
