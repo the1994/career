@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Algorithm (02) - DP problem"
-description: "Algorithm and data struction training serie. This chapter includs a DP Problem, pots game."
+description: "Algorithm and data struction training serie. This chapter includs a DP Problem, Pots of gold game."
 category: "Programming"
 tags: ["Algorithm", "Python"]
 ---
@@ -9,7 +9,7 @@ tags: ["Algorithm", "Python"]
 
 ### Problem Description
 
-Author: [Ignatius.L](http://acm.hdu.edu.cn/showproblem.php?pid=1003)
+Resource: [Pots of gold game](http://www.careercup.com/question?id=15422849)
 
 	Pots of gold game: Two players A & B. There are pots of gold arranged in a line, each containing some gold coins (the players can see how many coins are there in each gold pot - perfect information). They get alternating turns in which the player can pick a pot from one of the ends of the line. The winner is the player which has a higher number of coins at the end. The objective is to "maximize" the number of coins collected by A, assuming B also plays optimally. A starts the game. 
 
