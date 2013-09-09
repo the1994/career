@@ -16,6 +16,8 @@ tags: ["Java", "Design Pattern"]
 
 # Code Example
 
-You can find all the code from my [Github](https://github.com/jesusjzp/design_patterns/tree/master/src/decorator).
+You can find all the [code(Java)](https://github.com/jesusjzp/design_patterns/tree/master/src/decorator).
+
+[Code(PHP)](https://github.com/jesusjzp/design_patterns/tree/master/src/decorator.php).
 
 Good luck!
