@@ -64,6 +64,6 @@ Android版《散文随笔》合集apk终于上线了。虽然自从实习结束�
 
 * 给iphone用户道个歉，开发者日子过得太寒酸，用不上mac，虽然一直仰慕Object-C，但能力有限，给来邮件询问的各位朋友说声对不起。
 
-* 本app所有文章均来自http://www.duanwenxue.com/，我只是收集了文章目录以及链接地址，所有文章内容需要用户访问duanwenxue才能查看，所以不会影响服务器流量（有可能会增加流量）。
+* 本app所有文章均来自[http://www.duanwenxue.com/](http://www.duanwenxue.com/)，我只是收集了文章目录以及链接地址，所有文章内容需要用户访问duanwenxue才能查看，所以不会影响服务器流量（有可能会增加流量）。
 
 * 本应用采用采用了Apache License Version 2.0开源协议，使用了诸多第三方开发library，具体app架构依赖关系及library列表请参见博客：[Android Develop Record(12) - Third-party library](http://jesusjzp.github.io/blog/2013/08/29/Android-Develop-Record/)
