@@ -20,7 +20,7 @@ Checking List:
 - pkg-config
 - cmake
 
-In Fedora 19, the corresponding packages are **gtk2**, **pkgconfig**, **cmake** respectively.
+In Fedora 19, the corresponding packages are **gtk2**, **gtk2-devel**, **pkgconfig**, **cmake** respectively.
 
 ## Download source
 
