@@ -52,11 +52,11 @@ Here is an example:
 
 ![pic](http://media-cache-ec0.pinimg.com/736x/d1/c2/3b/d1c23b9f6216c3c65a03eb29ef899ccc.jpg)
 
-<center>**Figure1: Origin picture**</center>
+<center>Figure1: Origin picture</center>
 
 ![pic](http://media-cache-ec0.pinimg.com/736x/fc/cd/a1/fccda1168a7b5649ca018d6353a8cb15.jpg)
 
-<center>**Figure2: Simple algorithm**</center>
+<center>Figure2: Simple algorithm</center>
 
 ### Improved Contrast Maximization Algorithms
 
@@ -68,16 +68,16 @@ Here are three examples:
 
 ![pic](http://media-cache-ec0.pinimg.com/736x/d1/c2/3b/d1c23b9f6216c3c65a03eb29ef899ccc.jpg)
 
-<center>**Figure1: Origin picture**</center>
+<center>Figure3: Origin picture</center>
 
 ![pic](http://media-cache-ak0.pinimg.com/736x/09/e1/d9/09e1d9ff41df9fcbeb614e22438b3145.jpg)
 
-<center>**Figure1: Algorithm Wolf et al. (2001) needs black text on white background**</center>
+<center>Figure4: Algorithm Wolf et al. (2001) needs black text on white background</center>
 
 ![pic](http://media-cache-ec0.pinimg.com/736x/ef/d5/5e/efd55e19b3e6a2dcb8f0c2f75f84b651.jpg)
 
-<center>**Figure1: Algorithm Sauvola et al. (1997) needs black text on white background**</center>
+<center>Figure5: Algorithm Sauvola et al. (1997) needs black text on white background</center>
 
 ![pic](http://media-cache-ak0.pinimg.com/736x/ee/6a/15/ee6a15230a8c954f49acff6b47a648ee.jpg)
 
-<center>**Figure1: Algorithm Niblack (1986) needs white text on black background**</center>
+<center>Figure6: Algorithm Niblack (1986) needs white text on black background</center>
