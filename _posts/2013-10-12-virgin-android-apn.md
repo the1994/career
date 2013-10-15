@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "法国Virgin卡如何在android上配置APN"
-description: "法国virgin手机卡配置apn，android手机。La configuration d'APN sur Android pour Virgin en France"
+title: "法国Virgin卡如何在android上配置APN上网"
+description: "法国virgin手机卡配置apn上网，android手机，2G或者3G网络。La configuration d'APN sur Android pour Virgin en France"
 category: "Life"
 tags: ["Life"]
 ---
