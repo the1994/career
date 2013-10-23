@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "NoSQL 0 - Taxonomies by Data Model"
-description: ""
+description: "NoSQL database taxonomies"
 category: "Programming"
 tags: ["NoSQL", "MapReduce", "Hadoop"]
 ---
 
-Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), 2010**.
+Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P23-26 2010**.
 
 Concerning the classification of NoSQL stores Highscalability author Todd Hoff cites a presentation by Stephen Yen in his blog post “A yes for a NoSQL taxonomy”. In the presentation “NoSQL is a Horseless Carriage” Yen suggests a taxononmy that can be found in table 2.1.
 
