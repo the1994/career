@@ -18,10 +18,14 @@ Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch
 
 ##ACID vs. BASE
 
+**ACID**
+
 - Atomicity
 - Consistency
 - Isolation
 - Durability
+
+**BASE**
 
 - Basically available
 - Soft-state
