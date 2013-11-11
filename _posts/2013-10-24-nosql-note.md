@@ -33,6 +33,8 @@ Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch
 
 ![pic](https://dl-web.dropbox.com/get/Blog/Selection_008.png?w=AACG3vhypLAVq0XNeENXvK5lKt6-xsg96ByOVm455bs3jQ)
 
+**Ippolito summarizes the BASE properties in the following way: an application works basically all the time (basically available), does not have to be consistent all the time (soft-state) but will be in some known-state state eventually (eventual consistency).**
+
 ##Versioning of Datasets in Distributed Scenarios##
 
 If datasets are distributed among nodes, they can be read and altered on each node and no strict consistency is ensured by distributed transaction protocols, questions arise on how “concurrent” modifications and versions are processed and to which values a dataset will eventually converge to. There are several options to handle these issues:
@@ -48,3 +50,8 @@ A vector clock is defined as a tuple V [0], V [1], ..., V [n] of clock values fr
 
 ![pic](https://dl-web.dropbox.com/get/Blog/Selection_002.png?w=AAAbyWJg2je8STxoa8MxJ8U_VPUgNRXBKlOJTs-Dg_dxfg)
 
+The advantages of vector clocks are:
+
+- No dependence on synchronized clocks
+- No total ordering of revision numbers required for casual reasoning
+- No need to store and maintain multiple revisions of a piece of data on all nodes
