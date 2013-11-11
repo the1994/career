@@ -46,3 +46,18 @@ Next, one client issues an update for version D2 that gets handled by storage ho
 ![pic](http://media-cache-ec0.pinimg.com/originals/19/5a/cd/195acd6d336aba803fbeb1d8974ad045.jpg)
 
 In the next read request both D3 and D4 get delivered to a client along with a summary of their vector clocks—in particular: ([Sx,2],[Sy,1],[Sz,1]). The client can detect that versions D3 and D4 are in conflict, as the combined vector clock submitted in the read context does not reflect a linear, subsequent ordering. Before a client can issue another update to the system it has to reconcile a version D5 from the concurrent versions D3 and D4. If this update request is handled by node Sx again, it will advance it’s version number in the vector clock resulting in ([Sx,3],[Sy,1],[Sz,1]) as depicted in figure 4.2.
+
+###Execution of get() and put() Operations
+
+###Membership
+
+###Handling of Failures
+
+##4.1.4 Implementation and Optimizations
+
+##4.1.5 Evaluation
+
+To conclude the discussions on Amazon’s Dynamo, a brief evaluation of Bob Ippolito’s talk “Drop ACID and think about Data” shall be presented in table 4.2.
+
+![pic](http://media-cache-ec0.pinimg.com/originals/b7/63/d7/b763d75fb06ca33aebaa33149cccf99d.jpg)
+
