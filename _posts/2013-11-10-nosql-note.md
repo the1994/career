@@ -6,7 +6,7 @@ category: "Programming"
 tags: ["NoSQL"]
 ---
 
-Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P37-,  2010**.
+Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P37-44,  2010**.
 
 #3.2 Partitioning#
 
