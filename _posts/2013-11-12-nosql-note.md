@@ -34,3 +34,15 @@ To provide incremental scalability, Dynamo uses **consistent hashing** to dynami
 ###Replication
 
 ![pic](http://media-cache-ec0.pinimg.com/originals/68/2f/d5/682fd5df2359f6f4cd4923f025e233d5.jpg)
+
+###Data Versioning
+
+Figure 4.2 illustrates the usage of vector clocks as well as the detection and reconciliation of concurrent versions.
+
+In this illustration a client first creates a data item and the update request is handled by a storage host Sx, so that the vector clock ([Sx,1]) will be associated with it. Next, a client updates this data item and this update request leading to version 2 is also executed by node Sx. The resulting vector clock will be ([Sx,2]), as a casual ordering between [Sx,1] and [Sx,2] can be determined as the latter clearly succeeds the former (same storage host, ascending version numbers). As [Sx,1] has only one successor ([Sx,2]) it is no longer needed for casual reasoning and can be removed from the vector clock.
+
+Next, one client issues an update for version D2 that gets handled by storage host Sy and results in the vector clock ([Sx,2],[Sy,1]). Here, the element [Sx,2] of the vector clock cannot get omitted. This is because the example assumes3 that a client issuing it has read version D2 from a node (say Sx) while storage host Sy has not yet received this version from its companion nodes. So the client wants to update a more recent version than node Sy knows at that time which is accepted due to the “always writeable”-property of Dynamo. The same happens with another client that has read D2 and issued an update handled by storage host Sz which is unaware of the version D2 at that time. This results in version D4 with the vector clock ([Sx,2],[Sz,1]).
+
+![pic](http://media-cache-ec0.pinimg.com/originals/19/5a/cd/195acd6d336aba803fbeb1d8974ad045.jpg)
+
+In the next read request both D3 and D4 get delivered to a client along with a summary of their vector clocks—in particular: ([Sx,2],[Sy,1],[Sz,1]). The client can detect that versions D3 and D4 are in conflict, as the combined vector clock submitted in the read context does not reflect a linear, subsequent ordering. Before a client can issue another update to the system it has to reconcile a version D5 from the concurrent versions D3 and D4. If this update request is handled by node Sx again, it will advance it’s version number in the vector clock resulting in ([Sx,3],[Sy,1],[Sz,1]) as depicted in figure 4.2.
