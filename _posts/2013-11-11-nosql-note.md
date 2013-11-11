@@ -6,7 +6,7 @@ category: "Programming"
 tags: ["NoSQL"]
 ---
 
-Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P44-,  2010**.
+Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P44-51,  2010**.
 
 #3.3 Storage Layout
 
