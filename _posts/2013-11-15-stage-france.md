@@ -16,3 +16,4 @@ tags: ["Stage"]
 
 ![pic](http://media-cache-cd0.pinimg.com/originals/f4/ab/26/f4ab2660ff9703d2ede909b8ababdc90.jpg)
 
+*图片摘自：[http://www.channelnews.fr/expertises/etudes/16042-livre-dor-le-top-2013-des-societes-de-services-.html](http://www.channelnews.fr/expertises/etudes/16042-livre-dor-le-top-2013-des-societes-de-services-.html)*
