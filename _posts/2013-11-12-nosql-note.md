@@ -6,7 +6,7 @@ category: "Programming"
 tags: ["NoSQL"]
 ---
 
-Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P52-,  2010**.
+Extracted from **Christof Strauch, [NoSQL Databases](http://www.christof-strauch.de/nosqldbs.pdf), P52-62,  2010**.
 
 #4.1 Amazon's Dynamo
 
