@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Algorithm (04) - Find Loop in List"
+title: "Algorithm (05) - Find Loop in List"
 description: ""
 category: "Programming"
-tags: ["Algorithm", "C/C++"]
+tags: ["Algorithm", "Java"]
 ---
 
 ## Question
