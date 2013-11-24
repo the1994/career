@@ -38,8 +38,31 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/application.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/go-top.js"></script>
 
     <script type="text/javascript" src="{{ ASSET_PATH }}/libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        var bt = $('#toolBackTop');
+        var sw = $(document.body)[0].clientWidth;
+
+        var limitsw = (sw - 840) / 2 - 80;
+        if (limitsw > 0){
+                limitsw = parseInt(limitsw);
+                bt.css("right",limitsw);
+        }
+
+        $(window).scroll(function() {
+                var st = $(window).scrollTop();
+                if(st > 30){
+                        bt.show();
+                }else{
+                        bt.hide();
+                }
+        });
+    })
+    </script>
   </head>
 
   <body>
@@ -58,11 +81,18 @@
       </div>
     </div>
 
+    <div style="display:none;" class="back-to" id="toolBackTop">
+      <a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top">返回顶部</a>
+    </div>
+
     <div class="container-narrow">
 
       <div class="content">
         {{ content }}
       </div>
+
+      <center><a href="#" onclick="goTop();return false;">TOP</a></center>
+
       <hr>
       <footer>
         <small class="muted">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</small>
@@ -76,5 +106,6 @@
       // Trigger mixpanel event.
       mpq.track("{{ page.title }}");
     </script>
+
   </body>
 </html>
