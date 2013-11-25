@@ -91,11 +91,16 @@
         {{ content }}
       </div>
 
-      <center><a href="#" onclick="goTop();return false;">TOP</a></center>
+      
 
       <hr>
       <footer>
-        <small class="muted">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</small>
+        <center>
+        <small class="muted">Copyright &copy; 
+          {{ site.time | date: '%Y' }} <a href="mailto:jesusjzp@gmail.com">{{ site.author.name }}</a> | 
+          <a href="http://www.zhipengjiang.com">Magic Studio</a>
+        </small>
+        </center>
       </footer>
 
     </div>
