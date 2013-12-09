@@ -43,3 +43,9 @@ Et à la fin de l'itération, on a la somme des phéromones qui ne se sont pas �
 
 ![pic](http://upload.wikimedia.org/math/a/f/7/af7b60d7f88976977c04b25baef9c050.png)
 
+# Code
+
+The implementation of algorithme can be found here:
+
+[ant](https://github.com/jesusjzp/python_training/tree/master/java/ant)
+
