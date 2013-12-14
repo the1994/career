@@ -11,6 +11,6 @@ tags: ["Algorithm", "C"]
 Veuillez consulter le code sous github: [« Click me 1»](https://github.com/jesusjzp/training/blob/master/C/string/myStr1.c) [« Click me 2»](https://github.com/jesusjzp/training/blob/master/C/string/myStr2.c)
 
 
-##### Doter celui-ci d'une sémantique axiomatique en rajoutant des assertions là où cela vous paraît utile. Ces assertions seront par ailleurs implémentées comme vous le feriez avec des fonctions booléennes.
+##### 2. Doter celui-ci d'une sémantique axiomatique en rajoutant des assertions là où cela vous paraît utile. Ces assertions seront par ailleurs implémentées comme vous le feriez avec des fonctions booléennes.
 
 Veuillez consulter le code sous github: [« Click me »](https://github.com/jesusjzp/training/blob/master/C/string/TriDeShell)
