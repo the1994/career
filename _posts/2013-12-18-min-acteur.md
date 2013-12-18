@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Algorithme de colonies de fourmis"
-description: "Algorithme de colonies de fourmis"
+title: "Min'Acteur"
+description: "Min'Acteur"
 category: "Programming"
-tags: ["Algorithm", "Java"]
+tags: ["PHP", "JavaScript"]
 ---
 
 ## L'idée
