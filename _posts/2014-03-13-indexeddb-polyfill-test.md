@@ -17,6 +17,83 @@ More details of IndexedDB browsers support can be found in this graph:
 
 Using this polyfill, you can use a single offline storage API across browsers (Opera, Safari, Firefox, Chrome and IE10) and even mobile devices (Phonegap on iOS and Android).
 
+## How to test
+
+#### Include polyfill
+
+To use the polyfill, simply download [the concatenated, minified product](https://raw.github.com/axemclion/IndexedDBShim/master/dist/IndexedDBShim.min.js) and include it in your HTML document.
+
+#### Initialize database
+
+<pre class="prettyprint linenums">
+if (typeof window.mozIndexedDB !== "undefined") {
+  window.indexedDB = window.mozIndexedDB;
+}
+else {
+  window.indexedDB = window.shimIndexedDB;
+  window.shimIndexedDB.__useShim();     // force to use polyfill
+  window.shimIndexedDB.__debug(true);   // enable debug
+  console.log("Starting Tests with shimIndexedDB");
+}
+</pre>
+
+#### Create database
+
+Normally there are other function that need to add so as to make debug easier, such as `onerror` or `onabort`, etc.
+
+<pre class="prettyprint linenums">
+// Create database
+var dbOpenRequest = window.indexedDB.open('library');
+
+dbOpenRequest.onsuccess = function(e){
+  console.log("Database Opened successfully");
+  db = dbOpenRequest.result;
+};
+
+dbOpenRequest.onupgradeneeded = function(e){
+  console.log("Database Upgraded successfully");
+  db = dbOpenRequest.result;
+  // Define data structure and primary key
+  store = db.createObjectStore('books', {
+    keyPath: "isbn",
+    "autoIncrement": false
+  });
+
+  var isbnIndex = store.createIndex("by_isbn", "isbn", {unique: true});
+  var titleIndex = store.createIndex("by_title", "title");
+  var authorIndex = store.createIndex("by_author", "author");
+
+  store.put({title: "Quarry Memories", author: "Fred", isbn: 123456});
+  store.put({title: "Water Buffaloes", author: "Fred", isbn: 234567});
+  store.put({title: "Bedrock Nights", author: "Barney", isbn: 345678});
+
+};
+</pre>
+
+#### Add record
+
+<pre class="prettyprint linenums">
+store.put({title: "Quarry Memories", author: "Fred", isbn: 123456});
+</pre>
+
+#### Add record
+
+<pre class="prettyprint linenums">
+store.delete(id);
+</pre>
+
+#### Clear database
+
+<pre class="prettyprint linenums">
+store.clear();
+</pre>
+
+#### Close connection
+
+<pre class="prettyprint linenums">
+db.close();
+</pre>
+
 ## Test results
 
 Chrome
