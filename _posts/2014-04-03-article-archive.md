@@ -21,3 +21,13 @@ tags: [""]
 - [35个让人惊讶的 CSS3 动画效果演示](http://www.cnblogs.com/lhb25/archive/2011/11/22/best-awesome-css3-animation-demos.html)
 - [Web 前端开发精华文章推荐（jQuery、HTML5、CSS3）【系列十二】](http://www.cnblogs.com/lhb25/archive/2012/12/12/must-read-links-for-web-designers-and-developers-volume-12.html)
 - [全球酷站秀：15个顶尖的 CSS3 网站作品](http://www.cnblogs.com/lhb25/p/css3-websites-design.html)
+
+## 知识汇总
+
+-[A List of Foundational JavaScript Tools](https://www.codefellows.org/blogs/complete-list-of-javascript-tools)
+-[Git - 简易指南](http://segmentfault.com/a/1190000000346936)
+-[目录](http://zhuanlan.zhihu.com/evilcos/19691465)
+
+## 网络安全
+
+-[关于OpenSSL“心脏出血”漏洞的分析](http://drops.wooyun.org/papers/1381)
