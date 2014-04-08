@@ -14,6 +14,7 @@ tags: [""]
 - [Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)
 - [无插件Vim编程技巧](http://coolshell.cn/articles/11312.html)
 - [Python教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
+- [Javascript callbacks](http://dreamerslab.com/blog/en/javascript-callbacks/)
 
 ## UI设计类
 
@@ -24,10 +25,10 @@ tags: [""]
 
 ## 知识汇总
 
--[A List of Foundational JavaScript Tools](https://www.codefellows.org/blogs/complete-list-of-javascript-tools)
--[Git - 简易指南](http://segmentfault.com/a/1190000000346936)
--[目录](http://zhuanlan.zhihu.com/evilcos/19691465)
+- [A List of Foundational JavaScript Tools](https://www.codefellows.org/blogs/complete-list-of-javascript-tools)
+- [Git - 简易指南](http://segmentfault.com/a/1190000000346936)
+- [目录](http://zhuanlan.zhihu.com/evilcos/19691465)
 
 ## 网络安全
 
--[关于OpenSSL“心脏出血”漏洞的分析](http://drops.wooyun.org/papers/1381)
+- [关于OpenSSL“心脏出血”漏洞的分析](http://drops.wooyun.org/papers/1381)
