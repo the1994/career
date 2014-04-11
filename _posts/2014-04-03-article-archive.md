@@ -15,6 +15,7 @@ tags: [""]
 - [无插件Vim编程技巧](http://coolshell.cn/articles/11312.html)
 - [Python教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
 - [Javascript callbacks](http://dreamerslab.com/blog/en/javascript-callbacks/)
+- [前端不为人知的一面--前端冷知识集锦](http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html)
 
 ## UI设计类
 
