@@ -33,3 +33,7 @@ tags: [""]
 ## 网络安全
 
 - [关于OpenSSL“心脏出血”漏洞的分析](http://drops.wooyun.org/papers/1381)
+
+## 工具使用
+
+- [终极 Shell](http://macshuo.com/?tag=zsh)
