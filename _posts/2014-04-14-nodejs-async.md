@@ -29,6 +29,12 @@ async.waterfall([
 });
 </pre>
 
+Result
+
+  one
+  two
+  three
+  done
 
 ### Function setTimeout
 
@@ -71,6 +77,12 @@ doSomthing(30, function(result) {
 });
 </pre>
 
+Result
+
+  Initialization
+  for finished
+  The result is:  0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229
+
 ### Function callback
 
 <pre class="prettyprint linenums">
@@ -92,3 +104,8 @@ do_a( function(){
   do_b();
 });
 </pre>
+
+Result
+
+  `do_a`: this takes longer than `do_b`
+  `do_b`: now we can make sure `do_b` comes out after `do_a`
