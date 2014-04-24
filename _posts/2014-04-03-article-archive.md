@@ -10,12 +10,24 @@ tags: [""]
 
 ## 教程类
 
-- [一大波免费电子书！](http://jianshu.io/p/2761aad1069e)
-- [Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)
-- [无插件Vim编程技巧](http://coolshell.cn/articles/11312.html)
-- [Python教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
+#### Javascript
+
 - [Javascript callbacks](http://dreamerslab.com/blog/en/javascript-callbacks/)
+- [Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)
 - [前端不为人知的一面--前端冷知识集锦](http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html)
+
+#### HTML5
+
+- [Create a Drawing App with HTML5 Canvas and JavaScript](http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/)
+
+#### MEAN.io
+
+- [Setting Up a MEAN Stack Single Page Application](http://scotch.io/bar-talk/setting-up-a-mean-stack-single-page-application)
+
+#### Python
+
+- [Python教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
+
 
 ## UI设计类
 
@@ -31,6 +43,7 @@ tags: [""]
 - [Git - 简易指南](http://segmentfault.com/a/1190000000346936)
 - [Github Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
 - [目录](http://zhuanlan.zhihu.com/evilcos/19691465)
+- [一大波免费电子书！](http://jianshu.io/p/2761aad1069e)
 
 ## 网络安全
 
@@ -39,3 +52,4 @@ tags: [""]
 ## 工具使用
 
 - [终极 Shell](http://macshuo.com/?tag=zsh)
+- [无插件Vim编程技巧](http://coolshell.cn/articles/11312.html)
