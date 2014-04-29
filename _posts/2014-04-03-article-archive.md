@@ -46,6 +46,7 @@ tags: [""]
 - [Git - 简易指南](http://segmentfault.com/a/1190000000346936)
 - [Github Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
 - [目录](http://zhuanlan.zhihu.com/evilcos/19691465)
+- [GitHub从零单排第二期](http://jianshu.io/p/83f5c0590b65)
 - [一大波免费电子书！](http://jianshu.io/p/2761aad1069e)
 - [How to be a great software developer](http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer)
 
