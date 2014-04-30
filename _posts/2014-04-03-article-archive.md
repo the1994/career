@@ -39,9 +39,11 @@ tags: [""]
 - [全球酷站秀：15个顶尖的 CSS3 网站作品](http://www.cnblogs.com/lhb25/p/css3-websites-design.html)
 - [Metronic 基于 Bootstrap 的响应式后台管理模板](http://www.cnblogs.com/lhb25/p/metronic-responsive-admin-dashboard-template.html)
 - [Frontend Development](https://github.com/dypsilon/frontend-dev-bookmarks)
+- [An impressive hover effects collection](http://gudh.github.io/ihover/dist/index.html)
 
 ## 知识汇总
 
+-[Android开源项目分类汇总](https://github.com/Trinea/android-open-project)
 - [A List of Foundational JavaScript Tools](https://www.codefellows.org/blogs/complete-list-of-javascript-tools)
 - [Git - 简易指南](http://segmentfault.com/a/1190000000346936)
 - [Github Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
