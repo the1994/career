@@ -43,7 +43,8 @@ tags: [""]
 
 ## 知识汇总
 
--[Android开源项目分类汇总](https://github.com/Trinea/android-open-project)
+- [Robust and readable architecture for an Android App](http://joanzap.ghost.io/robust-architecture-for-an-android-app/)
+- [Android开源项目分类汇总](https://github.com/Trinea/android-open-project)
 - [A List of Foundational JavaScript Tools](https://www.codefellows.org/blogs/complete-list-of-javascript-tools)
 - [Git - 简易指南](http://segmentfault.com/a/1190000000346936)
 - [Github Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
