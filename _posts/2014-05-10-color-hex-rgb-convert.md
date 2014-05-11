@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GB to Hex and Hex to RGB
+title: RGB to Hex and Hex to RGB
 description: "RGB to Hex and Hex to RGB"
 category: "Programming"
 tags: ['Ionic', 'AngularJS', 'Javascript']
@@ -10,13 +10,13 @@ Wahoo, it has been nearly a month since my last post. LOL.
 
 Recently, I started another [ionic](http://ionicframework.com/) project [ionic-color](https://github.com/jesusjzp/ionic-color). Alright, I have to admit that it's another Android project that I didn't finish last year.
 
-Ok, in today's post, I'm gonna present some color-related tricks. The first one converts color with RGB format to the one in HEX, like (0, 0, 0) to #000000.
+Ok, in today's post, I'm gonna present some color-related tricks. The first one converts color with RGB format to the one in HEX, like `(0, 0, 0)` to `#000000`.
 
 	function rgbToHex(r, g, b) {
 		return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 	}
 
-Of couse the second one converts HEX to RGB, likt #000000 or #000 to (0, 0, 0).
+Of couse the second one converts HEX to RGB, likt `#000000` or `#000` to `(0, 0, 0)`.
 
 	function hexToRgb(hex) {
 		// Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
