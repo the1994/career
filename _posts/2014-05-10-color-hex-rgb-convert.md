@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RGB to Hex and Hex to RGB
+title: "RGB to Hex and Hex to RGB"
 description: "RGB to Hex and Hex to RGB"
 category: "Programming"
 tags: ['Ionic', 'AngularJS', 'Javascript']
@@ -35,6 +35,6 @@ Of couse the second one converts HEX to RGB, likt `#000000` or `#000` to `(0, 0,
 
 OK, I'm gonna explain this later today.
 
-======
+***
 
 I just saw poppy's new website, nice try! At least she made it, much better than those who talk much but do nothing. Good luck!
