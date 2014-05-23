@@ -41,6 +41,7 @@ tags: [""]
 - [Frontend Development](https://github.com/dypsilon/frontend-dev-bookmarks)
 - [An impressive hover effects collection](http://gudh.github.io/ihover/dist/index.html)
 
+
 ## 知识汇总
 
 - [Robust and readable architecture for an Android App](http://joanzap.ghost.io/robust-architecture-for-an-android-app/)
@@ -53,9 +54,12 @@ tags: [""]
 - [一大波免费电子书！](http://jianshu.io/p/2761aad1069e)
 - [How to be a great software developer](http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer)
 
+
 ## 网络安全
 
 - [关于OpenSSL“心脏出血”漏洞的分析](http://drops.wooyun.org/papers/1381)
+
+
 
 ## 工具使用
 
@@ -63,3 +67,8 @@ tags: [""]
 - [无插件Vim编程技巧](http://coolshell.cn/articles/11312.html)
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 - [Git Reference - BRANCHING AND MERGING](http://gitref.org/branching/)
+
+
+## Open source projects
+
+- [Quill - A Rich Text Editor with an API](https://github.com/quilljs/quill/)
