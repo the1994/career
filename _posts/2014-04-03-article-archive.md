@@ -53,6 +53,7 @@ tags: [""]
 - [GitHub从零单排第二期](http://jianshu.io/p/83f5c0590b65)
 - [一大波免费电子书！](http://jianshu.io/p/2761aad1069e)
 - [How to be a great software developer](http://peternixey.com/post/83510597580/how-to-be-a-great-software-developer)
+- [从输入 URL 到页面加载完成的过程中都发生了什么事情？](http://fex.baidu.com/blog/2014/05/what-happen/)
 
 
 ## 网络安全
