@@ -19,6 +19,7 @@ tags: [""]
 #### HTML5
 
 - [Create a Drawing App with HTML5 Canvas and JavaScript](http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/)
+- [HTML5 Video Player | Video.js](http://www.videojs.com/)
 
 #### MEAN.io (MongoDB, ExpressJS, AngularJS, Node.js)
 
