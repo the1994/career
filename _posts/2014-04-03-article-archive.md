@@ -69,7 +69,7 @@ tags: [""]
 - [无插件Vim编程技巧](http://coolshell.cn/articles/11312.html)
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 - [Git Reference - BRANCHING AND MERGING](http://gitref.org/branching/)
-
+- [Fork A Repo](https://help.github.com/articles/fork-a-repo)
 
 ## Open source projects
 
