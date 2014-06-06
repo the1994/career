@@ -3,7 +3,7 @@ layout: post
 title: "Ng-select example"
 description: "Call Function with Delay after Changes in AngularJS"
 category: "Programming"
-tags: ['AngularJS', 'Javascript', 'ionic']
+tags: ['AngularJS', 'Javascript', 'Ionic']
 ---
 
 In mobile UI, it's not a good idea to use drop-down to choose item. For example, in the picture below, I can't deny that it's beautifully designed, however, in the same time, it could be difficult for users to pull back drop-down list. Click other parts of the small screen? No way, that will result in mistakes of clicking. By the way, if the drop-down list is too long, it's almost impossible for user to scroll this small list.
