@@ -8,7 +8,7 @@ tags: ['Ionic', 'AngularJS']
 
 My first cross platform app by using [Ionic framework](http://ionicframework.com/), a framework based on [AngularJS](http://angularjs.org/).
 
-You can access this address [http://zhipengjiang.com/projects/ionic-todo/www/](http://zhipengjiang.com/projects/ionic-todo/www/) by your smart phone, iPhone, Android, Windows Phone 7/8, etc.
+You can access this address [http://jtodo.zhipengjiang.com/](http://jtodo.zhipengjiang.com/) by your smart phone, iPhone, Android, Windows Phone 7/8, etc.
 
 Have fun!
 
@@ -40,4 +40,3 @@ Have fun!
 ![pic](http://media-cache-ec0.pinimg.com/originals/1a/0f/da/1a0fdafc7128005cde6c54ce31fc8f74.jpg)
 
 ![pic](http://media-cache-ec0.pinimg.com/originals/f9/bc/08/f9bc0832db27355ab3453588e69129b5.jpg)
-
