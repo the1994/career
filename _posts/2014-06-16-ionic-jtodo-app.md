@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JToDo - a simple android app"
+title: "JToDo - a simple android todo app"
 description: "First app with Inoic framework"
 category: "Programming"
 tags: ['Ionic', 'AngularJS']
