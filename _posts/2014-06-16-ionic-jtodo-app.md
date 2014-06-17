@@ -6,7 +6,7 @@ category: "Programming"
 tags: ['Ionic', 'AngularJS']
 ---
 
-Finally, after several months of work (tooooo slow), the MVP of JToDo (Android version only) is publish on [Google Play](https://play.google.com/store/apps/details?id=com.zhipeng.jtodo). Since this was the MVP, JToDo dosen't have many functionalities. 
+Finally, after several months of work (tooooo slow), the MVP of JToDo (Android version only) is published on [Google Play](https://play.google.com/store/apps/details?id=com.zhipeng.jtodo). Since this was the MVP, JToDo dosen't have many functionalities. 
 
 Anyway, by developing JToDo besides my Internship at Sutoiku, I learnt many new technos, such as **AngularJS**, **JavaScript** and the most famous cross-platform tool **Cordova**, of course, in summary, the most awesome framework, **Ionicframework**.
 
