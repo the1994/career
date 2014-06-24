@@ -74,3 +74,7 @@ tags: [""]
 ## Open source projects
 
 - [Quill - A Rich Text Editor with an API](https://github.com/quilljs/quill/)
+
+## 关于创业
+
+- [My startup failed, and this is what it feels like…](https://medium.com/@nikkidurkin99/my-startup-failed-and-this-is-what-it-feels-like-c5d64b3ae96b)
