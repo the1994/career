@@ -15,6 +15,7 @@ tags: [""]
 - [Javascript callbacks](http://dreamerslab.com/blog/en/javascript-callbacks/)
 - [Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)
 - [前端不为人知的一面--前端冷知识集锦](http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html)
+- [Turn off the lights! getUserMedia API experiment](http://devhike.blogspot.com/2013/01/turn-off-light-getusermedia-api.html)
 
 #### HTML5
 
