@@ -32,6 +32,9 @@ tags: [""]
 
 - [Python教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
 
+#### Bash
+
+- [Bash脚本：怎样一行行地读文件（最好和最坏的方法）](http://blog.jobbole.com/72185/)
 
 ## Frontend
 
