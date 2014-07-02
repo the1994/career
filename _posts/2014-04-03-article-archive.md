@@ -34,7 +34,7 @@ tags: [""]
 
 #### Bash
 
-- [Bash脚本：怎样一行行地读文件（最好和最坏的方法）](http://blog.jobbole.com/72185/)
+- [Bash Script: How read file line by line (best and worst way)](http://linuxpoison.blogspot.com/2012/08/bash-script-how-read-file-line-by-line.html)
 
 ## Frontend
 
