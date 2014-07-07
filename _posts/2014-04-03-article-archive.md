@@ -74,6 +74,7 @@ tags: [""]
 - [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 - [Git Reference - BRANCHING AND MERGING](http://gitref.org/branching/)
 - [Fork A Repo](https://help.github.com/articles/fork-a-repo)
+- [Ubuntu软件与主题推介](http://jianshu.io/p/617e4388d814)
 
 ## Open source projects
 
