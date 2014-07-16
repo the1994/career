@@ -83,3 +83,4 @@ tags: [""]
 ## 关于创业
 
 - [My startup failed, and this is what it feels like…](https://medium.com/@nikkidurkin99/my-startup-failed-and-this-is-what-it-feels-like-c5d64b3ae96b)
+- [How To Communicate Effectively In IT Projects](http://www.smashingmagazine.com/2014/06/27/communicating-effectively-in-projects/)
