@@ -27,9 +27,9 @@ Due to the aweful lexical grammar, sorry I don't mean to be offensive, but this 
 ```JavaScript
 var parseWiki = require('wiki-infobox-parser');
 
-parseWiki('france', function(err, result) {
+parseWiki('France', function(err, result) {
 	if (err) { console.error(err); }
-  console.log(result);
+  console.log(JSON.stringify(result));
 });
 ```
 
