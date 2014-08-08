@@ -1,5 +1,3 @@
-Ordinal Number in javascript (1st, 2nd, 3rd, 4th)
-
 ---
 layout: post
 title: "Convert Cardinal Number to Ordinal Number"
@@ -17,8 +15,8 @@ Found a really useful [function](http://ecommerce.shopify.com/c/ecommerce-design
 
 I should say, it's really cute, really beautiful, here we go:
 
-  function getOrdinal(n) {
-    var s=["th","st","nd","rd"],
-      v=n%100;
-    return n+(s[(v-20)%10]||s[v]||s[0]);
-  }
+	function getOrdinal(n) {
+	  var s=["th","st","nd","rd"],
+	    v=n%100;
+	  return n+(s[(v-20)%10]||s[v]||s[0]);
+	}
