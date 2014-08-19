@@ -39,3 +39,27 @@ function func(data) {
 var input = fs.createReadStream('lines.txt');
 readLines(input, func);
 </pre>
+
+
+Another way, it seems to be simpler:
+
+<pre class="prettyprint linenums">
+var fs = require('fs');
+var pathToFile = process.argv[2];
+
+var bufferString, bufferStringSplit;
+
+function readFile(callback) {
+  fs.readFile(pathToFile, function (err, data) {
+    bufferString = data.toString(); 
+    bufferStringSplit = bufferString.split('\n'); 
+    callback();
+  });
+}
+
+function printLine() {
+  console.log(bufferStringSplit);
+}
+
+readFile(printLine);
+</pre>
