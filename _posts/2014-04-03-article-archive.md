@@ -45,7 +45,7 @@ tags: [""]
 - [Metronic 基于 Bootstrap 的响应式后台管理模板](http://www.cnblogs.com/lhb25/p/metronic-responsive-admin-dashboard-template.html)
 - [Frontend Development](https://github.com/dypsilon/frontend-dev-bookmarks)
 - [An impressive hover effects collection](http://gudh.github.io/ihover/dist/index.html)
-
+- [Dropbox’s Carousel Design Deconstructed (Part 1)](http://www.smashingmagazine.com/2014/08/26/dropbox-carousel-design-deconstructed-part-1/)
 
 ## 知识汇总
 
