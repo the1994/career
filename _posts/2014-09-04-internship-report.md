@@ -12,6 +12,8 @@ tags: ["AngularJS", "JavaScript", "Node.js", "Ionicframework", "CSS", "Wikipedia
 
 STOIC is changing the way people think about business applications. With STOIC, anyone can develop a cloud application, as easily as using a spreadsheet. Whether you start from scratch or from an existing template, you can build the application that will perfectly suit your needs. And you can do that yourself, without having to learn programming or getting help from an expert.
 
+![pic](https://googledrive.com/host/0Bx3dPnCQn7k4TTFpZ1VQNnRPcVk)
+
 // Introduction of Stoic
 
 // Introduction of Mobile UI / Ionicframework / Cordova / AngularJS / Node.js
@@ -55,7 +57,7 @@ Even though Angular is currently the Ionic's workhorse, the developers are keepi
 
 ### 2.1.3 Framework comparison
 
-Before changing to Ionicframework, I also tested several popular frameworks, like Kendo UI, jQuery Mobile, Sencha Touch, OnsenUI, etc. 
+Before changing to Ionicframework, I also tested several popular frameworks, like Kendo UI, jQuery Mobile, Sencha Touch, OnsenUI, etc.
 
 #### 2.1.3.3 jQuery Mobile
 
@@ -209,7 +211,14 @@ By the way, maybe this is a bug of AWS, when I tried to upload a picture to its 
 
 #### 2.1.4.10 Icons Page
 
+In this Icons Page, about 3.5k icons are categorized by their tag. In this page, user can search icon by name.
+
 ![pic](https://db.tt/z1gpLt4o)
+
+There are two main difficulties in this implementation, some of them are not solved yet:
+
+- Since the amount of icons is really large, we can not diplay all of them in a single page. So I implemented an accordion list by which user can expand a label if he in interested in a certain domian. Actually this is an implementation with pure CSS3, a second level list is embeded in the first level list.
+- There's some problem with the garbage collection mechanism of JavaScript, eachtime when we reload this page, it will consume an extra 100MB memory. We tried to trace the consumption of memory but nothing found. I still don't know why Google's V8 engine dosen't take those memory back.
 
 #### 2.1.4.11 Creation Page
 
@@ -223,7 +232,7 @@ Before the internship, even though I had developed several android applications,
 
 At the beginning of Mobile App development, I went to a meetup organised by Ionic team in San Francisco. The author of Ionic gave me many pratical suggestions and presented me the plan of future development, which gives me a berif idea of what is cross platform application and what is the average architecture.
 
-In addition, it's super difficult for me to get used to asynchronize programming. We use Require.js to arrange third-party libraries, which helps us to solve the problem of asynchronize loading.
+In addition, it's super difficult for me to get used to asynchronize programming. We use Require.js to schedule the loading process of third-party libraries, which helps us to solve the problem of asynchronize loading.
 
 For example, a common problem is that Ionic depends on AngularJS, we need to ensure that AngularJS is fully loaded before Ionic. The loading time can not be ignored since a single file is large enough. Currently we have integrated more than 40 kinds of thrid-parties libraries, all of them are under MIT license.
 
@@ -231,7 +240,13 @@ For example, a common problem is that Ionic depends on AngularJS, we need to ens
 
 The complexity of STOIC is far more than I could imagine. It was difficult for me to understand the whole system, which has many abstract concepts and complicated relationships. It was getting better when I finished the first version of Mobile Application.
 
+#### 2.1.5.3 Lack of Experience
+
+During this internship, I realised my lack of experience in system architecture design. For example, firstly I thought we only need to display data in a form, so the code is not flexiable and not easy to enable updating or deleting.
+
 ### 2.1.6 Brief Summary
+
+From this development of Mobile UI, I learnt and got used to asynchronous programming, I got familiar with AngularJS and Node.js. In the same time I also realised the dvantages and disadvantages for Web App, by comparing with native applications. Web App has a bright future, however it still needs some time to improve and enhance its proformence.
 
 ## 2.2 Web User Interface Development
 
@@ -262,25 +277,93 @@ RequireJS is a JavaScript file and module loader. It is optimized for in-browser
 
 #### 2.2.3.1 CRON Controller
 
-#### 2.2.3.2 CSV Controller
+![pic](http://38.media.tumblr.com/06af061dc8e9c000803cbf3bdb567aa3/tumblr_na0o40FZgB1rsjz40o4_1280.png)
 
 #### 2.2.3.3 Math Controller
 
+The Math control powered by [MathJax](http://www.mathjax.org/) is working! It does not support the full LaTeX syntax though, it’s just TeX, but for most equations, it should be plenty enough, and we can easily add it later if users really need it.
+
+![pic](http://31.media.tumblr.com/ac07735259fee3fb588425868e0638e8/tumblr_na2gw9x3oe1rsjz40o1_1280.png)
+
+![pic](http://38.media.tumblr.com/4fe573c4953d69dbce5b562d0b1a4550/tumblr_na0z2fohEF1rsjz40o1_1280.png)
+
 #### 2.2.3.4 Google Docs Controller
+
+Powered by Google Docs API, we can fetch and display the thumbnail of google docs by a given id.
+
+![pic](http://38.media.tumblr.com/d1a1e8c2da625882bceb274604e4d505/tumblr_nabwwsIpZZ1rsjz40o1_1280.png)
 
 #### 2.2.3.5 Video/Audio Controller
 
+Youtube
+
+![pic](http://38.media.tumblr.com/b2e4f5794f8b725736870c8504dc639f/tumblr_naw2tsmqWQ1rsjz40o1_1280.png)
+
+Vimeo
+
+![pic](http://31.media.tumblr.com/7b70b2595b4b5fde61395bfb757eeece/tumblr_navv7e2pDU1rsjz40o3_1280.png)
+
+SoundCloud
+
+![pic](http://38.media.tumblr.com/9c525165de7384ce1b93d38549b31019/tumblr_naw2uhUPHw1rsjz40o1_1280.png)
+
+Video of jPlayer
+
+![pic](http://38.media.tumblr.com/ba92325168b784919cb1340230af5519/tumblr_navv7e2pDU1rsjz40o1_1280.png)
+
 #### 2.2.3.6 Score Controller
 
-#### 2.2.3.7 Link Related Controller
+![pic](http://38.media.tumblr.com/df75d0cc812b3863fbb03e4291404687/tumblr_na9t0pQC8P1rsjz40o1_1280.png)
 
 #### 2.2.3.8 Duration Controller
 
+Thanks to [Bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker/), we can display time duration.
+
+![pic](http://33.media.tumblr.com/cd4b446947395046d73261002a6ce824/tumblr_naac6tlBEN1rsjz40o2_1280.png)
+
 #### 2.2.3.9 Geo Location Related Controller
+
+Locality
+
+Powered by Leaflet and OpenStreet Map, this controller supports geocoding function, that means you can type a name of the city, it can normalise the address and give a exact geolocation point.
+
+![pic](http://31.media.tumblr.com/6f2d0547e2ae5756aa82d7662e7d7214/tumblr_naiehrsVxS1rsjz40o2_1280.png)
+
+Geoshape
+
+![pic](http://33.media.tumblr.com/c0e1bc9ad6a2bfe66b5d96cc0e1bf25c/tumblr_nbaq7yeVLG1rsjz40o1_1280.png)
+
+* The Geoshape control now supports auto-centering and auto-zooming. What this means is that the map is automatically centered and focused on the geoshape being displayed, by finding the arithmetic center of the shape, creating a rectangular bounding box for it, and fitting the map to this box.
+* The shape is customizable, border color, background color, opacity, etc.
+
+Support for Geojson
+
+![pic](http://33.media.tumblr.com/18f379b7db7c4a00315b518f17586876/tumblr_nb1qpwj86k1rsjz40o2_1280.png)
+
+Geopoint
+
+![pic](http://31.media.tumblr.com/f7693f50e63e47be323c7e9c215cd761/tumblr_naqf1aEnVp1rsjz40o1_1280.png)
+
 
 #### 2.2.3.10 Music Controller
 
-#### 2.2.3.11 IP Contrller
+Music datatype uses the [VexFlow](https://github.com/ringw/vexflow/tree/musicxml) library. Without a WYSIWYG editor, this control isn’t super useful, but it’s a great proof of concept.
+
+![pic](http://33.media.tumblr.com/8f0222e874be89eecaff8b1153867c80/tumblr_naio60YWmj1rsjz40o2_1280.png)
+
+![pic](http://31.media.tumblr.com/9d6e1ffa3a36023247df5ae0d503919a/tumblr_naio60YWmj1rsjz40o1_1280.png)
+
+#### 2.2.3.11 IP Controller
+
+We’ve improved the IP control. We now display a link to visit the IP, as well as one form input per component of the IP v4 address, plus the ability to copy and past an entire IP address. This only works for IP v4, but support for IP v6 will be added soon.
+
+![pic](http://38.media.tumblr.com/78878d00e0baedb5919e85500deb734f/tumblr_nan0r4n8Cm1rsjz40o2_1280.png)
+
+#### 2.2.3.12 Barcode Controller
+
+Thanks to [BWIP-JS](https://code.google.com/p/bwip-js/), a barcode writer in pure JavaScript, we support 84 types of barcode.
+
+![pic](http://33.media.tumblr.com/61c94159924f1a480d4471697a7c0ef4/tumblr_naqxn2II2K1rsjz40o3_1280.png)
 
 ### 2.2.4 Map Perspective
 
