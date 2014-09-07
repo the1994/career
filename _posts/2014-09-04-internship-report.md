@@ -6,6 +6,9 @@ category: "Programming"
 tags: ["AngularJS", "JavaScript", "Node.js", "Ionicframework", "CSS", "Wikipedia", "d3.js"]
 ---
 
+- This report is not an official version.
+- All screenshots are taken by myself or taken from [sutoiku.com](https://db.tt/dhTrnpEu). Please feel free to use them for non commercial usage.
+
 # 1. Introduction
 
 ## 1.1 Introduction of STOIC (Sutoiku, Inc.)
@@ -14,30 +17,15 @@ STOIC is changing the way people think about business applications. With STOIC, 
 
 ![pic](https://googledrive.com/host/0Bx3dPnCQn7k4TTFpZ1VQNnRPcVk)
 
-// Introduction of Stoic
-
-// Introduction of Mobile UI / Ionicframework / Cordova / AngularJS / Node.js
-
-// Introduction of Formula.js / mdCache / GatewayJS
-
-// Methodology, agile development / fast iteration / pair programming
-
-
 # 2. Projects of Internship
 
-Throughout the internship, my main task is to develop Mobile application for STOIC platform with Ionicframework as UI (User Interface) framework. Secondly, I also took part in the Web UI development, in details I developped the form-controllers for different datatypes, ranging from mathmatiques equations to custom map, etc. In addition, I also developed some tools for internal usage, such as GEOCODING tool, which formatter address by Google Map API and Leaflet Geocoding API.
+Throughout the internship, the main project is to develop Mobile application for STOIC platform with Ionicframework as UI (User Interface) framework. Besides this, I also took part in the Web UI development, in details I implemented 17 form-controllers for different datatypes, ranging from mathmatiques equations to custom map, etc. In addition, I also developed some tools for internal usage and implemented some functions for Formula.js, an open-source repository in Github with more than 1000 stars.
 
 ## 2.1 Mobile Application Development
 
-Mobile Application development is the main project that I worked on, which consists in refactoring our previous prototype using the Ionic framework, with dynamic client-side AngularJS pages served by static server-side CircularJS pages for localization and theming. This allows us to test this architecture before we apply it to our refactored web user interface once we implement localization and theming for it.
+Mobile Application development(Mobile UI) is the main project that I worked on, which consists in refactoring our previous prototype using the Ionic framework, with dynamic client-side AngularJS pages served by static server-side CircularJS pages for localization and theming.
 
-The reasons why we choose cross platform framework are mainly as below:
-
-- With cross platform framework, it is possible to make such an app that can run on all platforms with little efforts with Cordova or PhoneGap.
-- Since in STOIC, all of us are JavaScript developers, cross platform development is Cheaper than native development, developers can easily start to work.
-- Cross platform development may help in decreasing the time of app development. A simple todo-list can be implemented with two hours from scratch.
-
-### 2.1.1 Introduction of AngularJS
+### 2.1.1 Introduction to AngularJS
 
 AngularJS is a JavaScript framework that makes it easier to implement RIA (Rich Internet Application) web applications. AngularJS is created by Google.
 
@@ -45,67 +33,17 @@ AngularJS is based on the MVC pattern (Model View Control). Therefore AngularJS 
 
 > AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you currently have to write. And it all happens within the browser, making it an ideal partner with any server technology.
 
-### 2.1.2 Introduction of Ionicframework
+### 2.1.2 Introduction to Ionicframework
 
 Ionic framework is quite young, as the beta was released in late May 2014, current version is v1.0.0-beta.11. Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the application structure, while Ionic itself focuses on the user interface. In other words, we see a match between the power of Angular and the beauty of Ionic UI.
 
 Ionic provides a set of Angular directives (custom HTML elements) for its own components, making it as easy to use the widgets as writing a line of HTML code. In addition to directives, Ionic uses Angular's touch recognizers, view animation logic, HTML sanitation, and asynchronous communication.
 
-While you can use Ionic straight after cloning or unpacking the library zip, you can also install their Node.js-based CLI through NPM and start quickly with their seed project.
+### 2.1.3 Main Use Caces of Mobile UI
 
-Even though Angular is currently the Ionic's workhorse, the developers are keeping their (and ours) options open with plans to support other frameworks such as Knockout or EmberJS. This particular review is strongly influenced by AngularJS and it doesn't vouch for the accuracy with other frameworks when Ionic support emerges.
+#### 2.1.3.1 Home Page
 
-### 2.1.3 Framework comparison
-
-Before changing to Ionicframework, I also tested several popular frameworks, like Kendo UI, jQuery Mobile, Sencha Touch, OnsenUI, etc.
-
-#### 2.1.3.3 jQuery Mobile
-
-jQuery Mobile is arguably the most widely used mobile framework – benefiting from association with the nearly ubiquitous jQuery project. Due to its recognition and association with jQuery-based open source development, jQuery Mobile boasts a huge number of 3rd party plugins, extensions, tools, themes and more.
-
-Developers writing mobile and hybrid mobile apps using jQuery Mobile will encounter the following:
-
-- Heavy use of HTML "data-\*" attributes. For example, a page in a jQuery Mobile application is simply a DOM element with a data-role attribute value like this: <div data-role="page"></div> Experienced web developers will pick up these kinds of framework conventions quickly.
-- jQuery Mobile provides a light application framework – primarily covering navigation, transitions between views. This can be extended via plugins, or through integration with more comprehensive frameworks. If your app framework needs extend beyond transitions and navigations (for example, templating, two-way binding and more), jQuery Mobile alone may not be a good fit.
-- It's designed to work within a Responsive Web Design (RWD) context – enabling developers to target a wide range of devices.
-- A wide array of device and browser support as well as a helpful theme roller to help with quickly customizing the otherwise clone look and feel.
-
-However, despite its popularity, jQuery Mobile has been criticized for performing poorly in mobile browsers. The jQuery Mobile team continues to work to improve the framework, including performance issues. If your team opts for jQuery Mobile, avoiding deeply nested DOM structures & unnecessary reflows and investigating the use of libraries like FastClick can help you avoid some of the typical pitfalls that have earned jQuery Mobile the slow label.
-
-#### 2.1.3.2 KendoUI
-
-Telerik's Kendo UI Mobile framework has emerged as a powerful and performance-minded framework for mobile web and hybrid mobile applications. Kendo UI Mobile provides both UI widgets and app framework functionality. Kendo UI Mobile is part of a larger Kendo UI framework that can target both desktop and mobile devices. In addition, Kendo UI Dataviz is arguably one of the best data visualization libraries available for both desktop and mobile web clients.
-
-Developers writing mobile and hybrid mobile apps will encounter the following:
-
-- Theming that matches the ‘native' look and feel of iOS, Android, Blackberry and Windows Phone 8, as well as a flat theme that looks nice across multiple devices.
-- Similar to jQuery Mobile, Kendo UI Mobile makes use of HTML5 `data-*` attributes. For example, a `view` in a Kendo UI Mobile application is a DOM element with an attribute/value of `data-role="view"`. This naturally extends to Kendo UI Mobile's widgets as well, since (for example) an unordered list element can be made into a listview element simply by adding `data-role="listview"` to the element.
-- Two-way binding, with a declarative syntax. Kendo UI Mobile provides some fairly sophisticated application framework features, with MVVM (model-view-viewmodel) infrastructure included. Application state is typically maintained in ‘view models', which are bound to views (DOM templates). As data in views change, the view models are automatically updated (and vice versa). By declarative we mean that the metadata necessary to enable two-way binding can be provided in the actual markup. For example, to bind the text content of a span to the firstName value of a view model, developers simply include this in the markup: <span data-bind="text: firstName"></span> Frameworks supporting two-way binding often help eliminate the same tired boilerplate code necessary in traversing DOM structures to retrieve state (user input, etc.). This can be a big productivity boost for your team.
-- Also included in the application framework features: view transitions, navigation & layout templates (which can be highly customized) as well as DataSources – an abstraction over retrieving data from multiple kinds of sources (for example, simple HTTP services, local data or even some Back-end-as-a-Service offerings). The Kendo UI team has gone quite a ways further than primarily UI/widget focused frameworks like jQuery Mobile in providing more substantial application architectural help.
-
-However, because KendoUI is under commercial license, in the mean time due to its old UI design, we decided to abandon this framework.
-
-
-
-#### 2.1.3.4 Sencha Touch
-
-Sencha will be a recognizable name to many web & mobile developers – likely due to their response to Mark Zuckerberg's assertion that "HTML5 Wasn't Ready". Sencha went on to prove that HTML5 is, indeed, ready for many complex use cases in mobile applications. Sencha Touch – Sencha's mobile focused HTML5 development platform – goes much further than providing only widget-focused features.
-
-Sencha recently updated Sencha Touch so that their device APIs fully support Apache Cordova (i.e. PhoneGap). Similar to Kendo UI Mobile, Sencha Touch makes use of HTML5 and CSS3 (taking advantage of hardware acceleration where possible) to create web-based UIs for mobile apps that aim to rival native UI performance. Developers building projects with Sencha Touch can expect the following:
-
-- Sencha Touch leans more heavily towards "full app framework" than many other popular options. It provides an MVC style architecture, complete with storage, device profile and top-level application abstractions.
-- Sencha Touch ships with 50 built-in components (and developers can create their own as well).
-- It's my understanding that Touch shares some common code with ExtJS (and common conceptual paradigms), so developers familiar with ExtJS will pick things up quickly. I would also argue that developers used to frameworks like Backbone.js will also pick up the concepts more readily than developers used to UI frameworks that focus on declarative bindings in markup.
-- Sencha Touch provides its own abstractions for things like history management and XHR – which is in line with expectations of any framework seeking to be a more "one stop/full-stack" option.
-
-Apparently Sencha Touch is a powerful framework, howevery just as this, Sencha is heavy for us, and it is not easy to customize if we want to integrate our APIs.
-
-
-### 2.1.4 Main Use Caces of Mobile Application
-
-#### 2.1.4.1 Home Page
-
-Accorrding to the previous Mobile UI, the home page contained a google map and a list of recent activities. Here's the first version after refactory with Ionicframework.
+Accorrding to the previous Mobile UI, the home page contained a google map and a list of recent activities. Here's the first version after refactoring with Ionicframework.
 
 [Angular Google Maps](https://angular-ui.github.io/angular-google-maps/#!/) is integrated to mark current user's location due to connection IP.
 
@@ -119,31 +57,31 @@ For the Web UI, the main page is consited of several widgets, for example, a wid
 
 ![pic](https://db.tt/jJPIp3Ng)
 
-#### 2.1.4.2 Applications Page
+#### 2.1.3.2 Applications Page
 
 With the help from Ionicframework, we can easily implement a slide menu like this, which displays the list of applications for current tenant.
 
 ![pic](https://db.tt/6jxy0lal)
 
-#### 2.1.4.3 Objects Page
+#### 2.1.3.3 Objects Page
 
 Application is consisted of several objects, once we click on an application, the list of objects will display with the animation. In this case the top search button allows user to search objects inside current list. Thanks to AngularJS filter, it is really easy to filter items inside a list.
 
 ![pic](https://db.tt/ww8lZqYY)
 
-#### 2.1.4.4 Records Page
+#### 2.1.3.4 Records Page
 
 It's the same UI and use case as Objects Page, an object contains several records.
 
 ![pic](https://db.tt/NuhCt1VW)
 
-#### 2.1.4.5 Dashboard Page
+#### 2.1.3.5 Dashboard Page
 
 In this page, we call it Dashboard Page, it's because in this page you can see a Stoic Sheet, a widget that dynamically displays charts or data. Below is the number of records and the button for creating new record.
 
 ![pic](http://33.media.tumblr.com/6793c61bcaf0c38dc813317bcc54a524/tumblr_n8to2kaZss1rsjz40o1_1280.png)
 
-#### 2.1.4.6 Details Page
+#### 2.1.3.6 Details Page
 
 Details Page is the most difficult task among all these use cases, which requires to support Rich Text Form. That means we need to support many types of input box, like text box, check box, date box, imgage box, etc. Even though Ionicframework offers some css templates, but the use cases are far more complicated than these simple framework.
 
@@ -159,7 +97,7 @@ This is details information page. You can see owner and copyright information an
 
 ![pic](https://db.tt/X2r2R7oh)
 
-#### 2.1.4.7 Color Page
+#### 2.1.3.7 Color Page
 
 I developed this color page for color box. At the moment when I implemented this color selector, I didn't know that in Web UI we were using Tinycolor2 for color calculation. By all means, at least I practiced the color conversion algorithm:
 
@@ -187,13 +125,13 @@ In addition, another key point here is data exchange between two controllers. He
 ![pic](https://db.tt/9cu8rPgv)
 
 
-#### 2.1.4.8 Map Page
+#### 2.1.3.8 Map Page
 
 In Map Page, we use [Angular Google Maps](https://angular-ui.github.io/angular-google-maps/#!/) to draw maps according to given address.
 
 ![pic](https://db.tt/bBsDqT4Y)
 
-#### 2.1.4.9 Camera Page
+#### 2.1.3.9 Camera Page
 
 Thanks to the FileAPI and StreamAPI of modern browser, we can access local files or take picture directly from browser and send it to server.
 
@@ -209,7 +147,7 @@ By the way, maybe this is a bug of AWS, when I tried to upload a picture to its 
 
 ![pic](https://db.tt/zxPLc08Q)
 
-#### 2.1.4.10 Icons Page
+#### 2.1.3.10 Icons Page
 
 In this Icons Page, about 3.5k icons are categorized by their tag. In this page, user can search icon by name.
 
@@ -220,37 +158,21 @@ There are two main difficulties in this implementation, some of them are not sol
 - Since the amount of icons is really large, we can not diplay all of them in a single page. So I implemented an accordion list by which user can expand a label if he in interested in a certain domian. Actually this is an implementation with pure CSS3, a second level list is embeded in the first level list.
 - There's some problem with the garbage collection mechanism of JavaScript, eachtime when we reload this page, it will consume an extra 100MB memory. We tried to trace the consumption of memory but nothing found. I still don't know why Google's V8 engine dosen't take those memory back.
 
-#### 2.1.4.11 Creation Page
+#### 2.1.3.11 Creation Page
+
+The creation page is similar to Details Page, actually they share the same form controllers.
+
+However, the difference is obvious and clear, the action workflow for creating an item dose not equal to display an item.
+
+For example, in order to display an image box, what I need to do is to create a container and fill it with an image. But, for create an image, I need to allow user to take a photo directly from mobile camera or upload a photo from local gallery. They don't have the same use case, neither the user interface.
+
+Here is a sample Creation Page:
 
 ![pic](https://db.tt/ftYKGZX7)
 
-### 2.1.5 Difficulties
-
-#### 2.1.5.1 New Technologies
-
-Before the internship, even though I had developed several android applications, I had very little experience in JavaScript programming, neither jQuery nor AngularJS. Thanks for Ismael, we started the internship by doing pair programming, from which I learnt the basic grammar of JavaScript and some of STOIC's libraries, like mdCache, a middleware for local cache management.
-
-At the beginning of Mobile App development, I went to a meetup organised by Ionic team in San Francisco. The author of Ionic gave me many pratical suggestions and presented me the plan of future development, which gives me a berif idea of what is cross platform application and what is the average architecture.
-
-In addition, it's super difficult for me to get used to asynchronize programming. We use Require.js to schedule the loading process of third-party libraries, which helps us to solve the problem of asynchronize loading.
-
-For example, a common problem is that Ionic depends on AngularJS, we need to ensure that AngularJS is fully loaded before Ionic. The loading time can not be ignored since a single file is large enough. Currently we have integrated more than 40 kinds of thrid-parties libraries, all of them are under MIT license.
-
-#### 2.1.5.2 Complex Concept of STOIC
-
-The complexity of STOIC is far more than I could imagine. It was difficult for me to understand the whole system, which has many abstract concepts and complicated relationships. It was getting better when I finished the first version of Mobile Application.
-
-#### 2.1.5.3 Lack of Experience
-
-During this internship, I realised my lack of experience in system architecture design. For example, firstly I thought we only need to display data in a form, so the code is not flexiable and not easy to enable updating or deleting.
-
-### 2.1.6 Brief Summary
-
-From this development of Mobile UI, I learnt and got used to asynchronous programming, I got familiar with AngularJS and Node.js. In the same time I also realised the dvantages and disadvantages for Web App, by comparing with native applications. Web App has a bright future, however it still needs some time to improve and enhance its proformence.
-
 ## 2.2 Web User Interface Development
 
-### 2.2.1 Introduction of Node.js
+### 2.2.1 Introduction to Node.js
 
 JavaScript's rising popularity has brought with it a lot of changes, and the face of web development today is dramatically different. The things that we can do on the web nowadays with JavaScript running on the server, as well as in the browser, were hard to imagine just several years ago, or were encapsulated within sandboxed environments like Flash or Java Applets.
 
@@ -267,21 +189,30 @@ One might argue that we've had this for years in the form of Flash and Java Appl
 
 With all of its advantages, Node.js now plays a critical role in the technology stack of many high-profile companies who depend on its unique benefits.
 
-In this post, I'll discuss not only how these advantages are accomplished, but also why you might want to use Node.js—and why not—using some of the classic web application models as examples.
-
-### 2.2.2 Introduction of Require.js
+### 2.2.2 Introduction to Require.js
 
 RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.
 
 ### 2.2.3 Custom Form Controllers
 
+Stoic supports 83 types of data, like textual data, temporal data or geological data, etc. So we create a Showcase in order to make it a whole lot easier to properly test all our new form controls. This form organizes all datatypes by families, with one form section per family for all controls that can be displayed on a single row. All other controls are added at the end of the form. With such an organization, it will also make it easier for new users to learn about our 81 datatypes, by simply looking at their respective controls.
+
 #### 2.2.3.1 CRON Controller
+
+CRON Controller allows users to specify scheduling rules without having to learn the atrocious CRON syntax.
+
+At first we were considering to reuse the plugin [jquery-cron](http://shawnchin.github.io/jquery-cron/), but then I found that the code is wrapped with jQeury and can not be modified directly. So I implemented a plugin, angular-Cron, to interpret basic cron text to human-readable text, for example:
+
+    # This is Cron text
+    50 23 1 6 *
+    # This is human readable text
+    Every year on July 1st at 23:50
 
 ![pic](http://38.media.tumblr.com/06af061dc8e9c000803cbf3bdb567aa3/tumblr_na0o40FZgB1rsjz40o4_1280.png)
 
 #### 2.2.3.3 Math Controller
 
-The Math control powered by [MathJax](http://www.mathjax.org/) is working! It does not support the full LaTeX syntax though, it’s just TeX, but for most equations, it should be plenty enough, and we can easily add it later if users really need it.
+The Math control is powered by [MathJax](http://www.mathjax.org/), an open source JavaScript display engine for mathematics that works in all browsers. It does not support the full LaTeX syntax though, it’s just TeX, but for most equations, it should be plenty enough, and we can easily add it later if users really need it.
 
 ![pic](http://31.media.tumblr.com/ac07735259fee3fb588425868e0638e8/tumblr_na2gw9x3oe1rsjz40o1_1280.png)
 
@@ -289,29 +220,55 @@ The Math control powered by [MathJax](http://www.mathjax.org/) is working! It do
 
 #### 2.2.3.4 Google Docs Controller
 
-Powered by Google Docs API, we can fetch and display the thumbnail of google docs by a given id.
+Powered by Google Docs API, we can fetch and display the thumbnail of google docs by a given id. User can click on the thumbnail so as to redirect to a new tab, which gives user access to read or edit in Google Docs.
 
 ![pic](http://38.media.tumblr.com/d1a1e8c2da625882bceb274604e4d505/tumblr_nabwwsIpZZ1rsjz40o1_1280.png)
 
 #### 2.2.3.5 Video/Audio Controller
 
-Youtube
-
-![pic](http://38.media.tumblr.com/b2e4f5794f8b725736870c8504dc639f/tumblr_naw2tsmqWQ1rsjz40o1_1280.png)
-
-Vimeo
-
-![pic](http://31.media.tumblr.com/7b70b2595b4b5fde61395bfb757eeece/tumblr_navv7e2pDU1rsjz40o3_1280.png)
-
-SoundCloud
-
-![pic](http://38.media.tumblr.com/9c525165de7384ce1b93d38549b31019/tumblr_naw2uhUPHw1rsjz40o1_1280.png)
-
-Video of jPlayer
+Thanks to jPlayer, a media library written in JavaScript, which allows you to rapidly weave cross platform audio and video into your web pages. I integrated this plugin into Stoic platform and customized some style sheets and themes.
 
 ![pic](http://38.media.tumblr.com/ba92325168b784919cb1340230af5519/tumblr_navv7e2pDU1rsjz40o1_1280.png)
 
+In addition, we also support Youtube, Vimeo as video player and SoundCloud as audio player.
+
+The problem for Youtube is its URL varies too much, it could be any of the examples below:
+
+- latest short format: [http://youtu.be/NLqAF9hrVbY](http://youtu.be/NLqAF9hrVbY)
+- iframe: [http://www.youtube.com/embed/NLqAF9hrVbY](http://www.youtube.com/embed/NLqAF9hrVbY)
+- iframe (secure): [https://www.youtube.com/embed/NLqAF9hrVbY](https://www.youtube.com/embed/NLqAF9hrVbY)
+- object param: [http://www.youtube.com/v/NLqAF9hrVbY?fs=1&hl=en_US](http://www.youtube.com/v/NLqAF9hrVbY?fs=1&hl=en_US)
+- object embed: [http://www.youtube.com/v/NLqAF9hrVbY?fs=1&hl=en_US](http://www.youtube.com/v/NLqAF9hrVbY?fs=1&hl=en_US)
+- watch: [http://www.youtube.com/watch?v=NLqAF9hrVbY](http://www.youtube.com/watch?v=NLqAF9hrVbY)
+- users: [http://www.youtube.com/user/Scobleizer#p/u/1/1p3vcRhsYGo](http://www.youtube.com/user/Scobleizer#p/u/1/1p3vcRhsYGo)
+- ytscreeningroom: [http://www.youtube.com/ytscreeningroom?v=NRHVzbJVx8I](http://www.youtube.com/ytscreeningroom?v=NRHVzbJVx8I)
+- any/thing/goes!: [http://www.youtube.com/sandalsResorts#p/c/54B8C800269D7C1B/2/PPS-8DMrAn4](http://www.youtube.com/sandalsResorts#p/c/54B8C800269D7C1B/2/PPS-8DMrAn4)
+- any/subdomain/too: [http://gdata.youtube.com/feeds/api/videos/NLqAF9hrVbY](http://gdata.youtube.com/feeds/api/videos/NLqAF9hrVbY)
+- more params: [http://www.youtube.com/watch?v=spDj54kf-vY&feature=g-vrec](http://www.youtube.com/watch?v=spDj54kf-vY&feature=g-vrec)
+- query may have dot: [http://www.youtube.com/watch?v=spDj54kf-vY&feature=youtu.be](http://www.youtube.com/watch?v=spDj54kf-vY&feature=youtu.be)
+- nocookie domain: [http://www.youtube-nocookie.com](http://www.youtube-nocookie.com)
+
+So we can use the regular expression to extract video's id:
+
+```
+re = /https?://(?:[0-9A-Z-]+\.)?(?:youtu\.be/|youtube(?:nocookie)?\.com\S*[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:[\'"][^<>]*>|</a>))[?=&+%\w.-]*/ig;
+```
+
+![pic](http://38.media.tumblr.com/b2e4f5794f8b725736870c8504dc639f/tumblr_naw2tsmqWQ1rsjz40o1_1280.png)
+
+It seems that Vimeo is simpler than Youtube, actually that’s true, at leaste url sample is less than Youtube:
+
+![pic](http://31.media.tumblr.com/7b70b2595b4b5fde61395bfb757eeece/tumblr_navv7e2pDU1rsjz40o3_1280.png)
+
+Actually it’s the first time for me to hear [Soundcloud](https://soundcloud.com/), as there are many online music providers, which are much more famous than Soundcloud. You know what, the url that you have only contains the name of the track and author’s name, while for embeding soundcloud you must have the track id. Since I need to finish my current task in PT, I tried to find something useful from their official document. Oh god, it’s really complex to understand the differences between “SDK” and “Developer” or other columns. Most importantly, I need to register a developer key so as to use their SDK. No way, that’s too much work!
+
+Actually, someone found another way to use their giant database, [https://developers.soundcloud.com/docs/oembed#introduction](https://developers.soundcloud.com/docs/oembed#introduction). Believe me, you can’t find the page within ten minutes, if you don’t use Google and you are new to Soundcloud.
+
+![pic](http://38.media.tumblr.com/9c525165de7384ce1b93d38549b31019/tumblr_naw2uhUPHw1rsjz40o1_1280.png)
+
 #### 2.2.3.6 Score Controller
+
+In Score editor, we have a algorithm to calculate the completeness of each record, correspondingly we will also give suggestions to improve.
 
 ![pic](http://38.media.tumblr.com/df75d0cc812b3863fbb03e4291404687/tumblr_na9t0pQC8P1rsjz40o1_1280.png)
 
@@ -323,27 +280,18 @@ Thanks to [Bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker/
 
 #### 2.2.3.9 Geo Location Related Controller
 
-Locality
-
 Powered by Leaflet and OpenStreet Map, this controller supports geocoding function, that means you can type a name of the city, it can normalise the address and give a exact geolocation point.
 
 ![pic](http://31.media.tumblr.com/6f2d0547e2ae5756aa82d7662e7d7214/tumblr_naiehrsVxS1rsjz40o2_1280.png)
 
-Geoshape
+Thanks to Geojson, a format for encoding a variety of geographic data structures, we could display lines, polygons or multipolygon in a map.
 
 ![pic](http://33.media.tumblr.com/c0e1bc9ad6a2bfe66b5d96cc0e1bf25c/tumblr_nbaq7yeVLG1rsjz40o1_1280.png)
 
-* The Geoshape control now supports auto-centering and auto-zooming. What this means is that the map is automatically centered and focused on the geoshape being displayed, by finding the arithmetic center of the shape, creating a rectangular bounding box for it, and fitting the map to this box.
-* The shape is customizable, border color, background color, opacity, etc.
-
-Support for Geojson
+With the help of leaflet, the Geoshape control supports auto-centering and auto-zooming. What this means is that the map is automatically centered and focused on the geoshape being displayed, by finding the arithmetic center of the shape, creating a rectangular bounding box for it, and fitting the map to this box.
+By the way, the shape is customizable, like border color, background color, opacity, etc.
 
 ![pic](http://33.media.tumblr.com/18f379b7db7c4a00315b518f17586876/tumblr_nb1qpwj86k1rsjz40o2_1280.png)
-
-Geopoint
-
-![pic](http://31.media.tumblr.com/f7693f50e63e47be323c7e9c215cd761/tumblr_naqf1aEnVp1rsjz40o1_1280.png)
-
 
 #### 2.2.3.10 Music Controller
 
@@ -367,23 +315,160 @@ Thanks to [BWIP-JS](https://code.google.com/p/bwip-js/), a barcode writer in pur
 
 ### 2.2.4 Map Perspective
 
-### 2.2.5 Difficulty
+#### 2.2.4.1 Dimension and Parameters
 
-### 2.2.6 Brief Summary
+![pic](http://33.media.tumblr.com/754ed6c5402e751e625492379837bd23/tumblr_nb727oJIJX1rsjz40o2_1280.png)
 
-## 2.3 Formula.js Development
+This is an overview of Map perspective. In order to enable users to customize the map, we provide Dimensions and Parameters, with which user can easily set the propertities of map.
 
-### 2.3.1 Introduction of Formula.js
+**Dimensions**
 
-### 2.3.2 Wikipedia Infobox Parser Function
+-  **Location**, with support for Address, Geopoint, and Geoshape
+-  **Color** for the color of markers and shapes
+-  **Artifact** for using an artifact like image or video in lieu of a marker
+-  **Iconography** for using the icons of categories, objects, or workflows
+-  **Size** for the size of markers or artifacts
+-  **Style** for styling markers and shapes
+-  **Title** for adding titles to markers and shapes
 
-### 2.3.3 Geocoding Function
+**Parameters**
 
-### 2.3.4 Other Functions
+-  **Attribution** for customizing the attribution notice
+-  **Show Title** for enabling the display of marker and shape titles
+-  **Center** for centering the map
+-  **Zoom** for setting the default zoom level
+-  **Map** for selecting which map to use for background tiles
+-  **Map** Style for styling the background map
+-  **Popup** for defining the template of marker and shape popups
 
-### 2.3.5 Difficulties
+#### 2.2.4.2 Iconography
 
-### 2.3.6 Brief Summary
+![pic](http://38.media.tumblr.com/c7c2212894ef682b5ff1e47601963ec0/tumblr_nazo53Gs671rsjz40o2_1280.png)
+
+![pic](http://38.media.tumblr.com/c4215333054c8b73d678054b992e0635/tumblr_nazo53Gs671rsjz40o1_1280.png)
+
+Instead of simple monotonous red markers that we can often find in Google Map, we support multiple types of marker, it can be a font icon or an image. Certainly user can edit the propertities of marker, for example the color, size, etc.
+
+#### 2.2.4.3 Popup
+
+![pic](http://33.media.tumblr.com/5ea52cbecfdc8986f39d48a123195461/tumblr_nb65xbiXo41rsjz40o2_1280.png)
+
+Since we have implemented the iconography, why not go further? Instead of normal hover event which displays illustrational text, we support stoic pages as popup, like the capture above, we can customize the pages by giving the url of stoic pages.
+
+#### 2.2.3.4 Choropleth Map
+
+![pic](https://db.tt/dhTrnpEu)
+
+A choropleth map is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map, such as population density or per-capita income.
+
+With the help of geo shape, we can easily implement a choropleth map for population density of different regions.
+
+# 3 Project Management
+
+## 3.1 Agile Software Development
+
+Agile software development is a group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement and encourages rapid and flexible response to change. It is a conceptual framework that focuses on frequently delivering small increments of working software.
+
+![pic](http://www.pixeldust.net/wp-content/uploads/2013/12/Agile.png)
+
+We break tasks into small increments with minimal planning. Iterations are short time frames (timeboxes) that typically last from one to four weeks. Each iteration involves a cross-functional team working in all functions: planning, requirements analysis, design, coding, testing. At the end of the iteration a working product is demonstrated to stakeholders. This minimizes overall risk and allows the project to adapt to changes quickly. An iteration might not add enough functionality to warrant a market release, but the goal is to have an available release (with minimal bugs) at the end of each iteration.
+
+A common characteristic of our agile development is daily working report. In a brief session, team members report to project manager what they did the previous day, what they intend to do today, and what their roadblocks are.
+
+## 3.2 Bugs Fixing vs New Features Implementation
+
+As with all business decisions, it's a cost/benefit problem. What is the benefit of fixing a bug or adding a feature? What will it cost, including the opportunity cost of not doing something else?
+
+For example, after the development of Mobile UI, I started to work on form controllers. As the requirements changed and some more tests were processed, a serious problem was found that we can not run Mobile UI in iPhone. Even though I was involved in Web UI development at that time, I have to fix the bug of Mobile UI first, because this is more important than new features implementation and I am the one who was familiar with the whole project. If a Mobile App can not run in a real phone, no one can aford to put it off.
+
+## 3.3 Management Tool - Pivotal Tracker
+
+Pivotal Tracker is Pivotal Labs' software as a service product for agile project management and collaboration.
+
+Pivotal Tracker simplifies collaborations across time zones and departments. When the development team is scattered, or when product managers and executives want to jump in, the work is already organized in one spot. People stay in sync and projects stay on course.
+
+In addition, Pivotal Tracker crystallizes priorities. It helps you constantly monitor project scope and focus on what’s essential. So your team is always moving in the right direction and the product takes the most efficient path to market.
+
+Maintaining constant velocity makes milestones more predictable and grounds decisions in what’s real and tangible. Need to know when a new feature might actually be delivered? Tracker has an estimate based on your past performance.
+
+## 3.4 Choices of Technologies
+
+### 3.4.1 Mobile UI Framework
+
+The reasons why we choose cross platform framework are mainly as below:
+
+- With cross platform framework, it is possible to make such an app that can run on all platforms with little efforts with Cordova or PhoneGap.
+- Since in STOIC, all of us are JavaScript developers, cross platform development is Cheaper than native development, developers can easily start to work.
+- Cross platform development may help in decreasing the time of app development. A simple todo-list can be implemented with two hours from scratch.
+
+Before using Ionicframework I tested some popular frameworks, like Kendo UI, jQuery Mobile, Sencha Touch, OnsenUI, etc. By compare the pros and cons, we finally decided to use Ionicframework as the main front-end framework.
+
+#### 3.4.1.1 jQuery Mobile
+
+jQuery Mobile is arguably the most widely used mobile framework, benefiting from association with the nearly ubiquitous jQuery project. Due to its recognition and association with jQuery-based open source development, jQuery Mobile boasts a huge number of 3rd party plugins, extensions, tools, themes and more.
+
+However developers writing mobile and hybrid mobile apps using jQuery Mobile will encounter the following problems:
+
+However, despite its popularity, jQuery Mobile has been criticized for performing poorly in mobile browsers. The jQuery Mobile team continues to work to improve the framework, including performance issues. If your team opts for jQuery Mobile, avoiding deeply nested DOM structures & unnecessary reflows and investigating the use of libraries like FastClick can help you avoid some of the typical pitfalls that have earned jQuery Mobile the slow label.
+
+In addition, jQuery Mobile provides a light application framework, primarily covering navigation, transitions between views. This can be extended via plugins, or through integration with more comprehensive frameworks. If your app framework needs extend beyond transitions and navigations (for example, templating, two-way binding and more), jQuery Mobile alone may not be a good fit.
+
+#### 3.4.1.2 KendoUI
+
+Telerik's Kendo UI Mobile framework has emerged as a powerful and performance-minded framework for mobile web and hybrid mobile applications. Kendo UI Mobile provides both UI widgets and app framework functionality. Kendo UI Mobile is part of a larger Kendo UI framework that can target both desktop and mobile devices. In addition, Kendo UI Dataviz is arguably one of the best data visualization libraries available for both desktop and mobile web clients.
+
+However, as KendoUI is under commercial license, in the mean time, due to its out-of-date UI design, we decided not to use this framework.
+
+#### 3.4.1.4 Sencha Touch
+
+Sencha will be a recognizable name to many web & mobile developers, likely due to their response to Mark Zuckerberg's assertion that "HTML5 Wasn't Ready". Sencha went on to prove that HTML5 is, indeed, ready for many complex use cases in mobile applications. Sencha Touch focused HTML5 development platform, goes much further than providing only widget-focused features.
+
+Sencha recently updated Sencha Touch so that their device APIs fully support Apache Cordova (i.e. PhoneGap). Similar to Kendo UI Mobile, Sencha Touch makes use of HTML5 and CSS3, taking advantage of hardware acceleration where possible, to create web-based UIs for mobile apps that aim to rival native UI performance.
+
+Apparently Sencha Touch is a powerful framework, howevery just as this, Sencha is heavy for us, and it is not easy to customize if we want to integrate our APIs.
+
+#### 3.4.1.5 Ionicframework
+
+The Ionic framework is an open source framework available from Ionic. This framework offers a library of mobile optimized HTML, JS Components and CSS to allow developers to build highly interactive apps. Ionic is built is SASS and based on and optimized for AngularJS which is part of what makes it so popular.
+
+The UI is clean, simple and based on functionality and speed. That does not mean that the framework lacks display though. Websites and apps are designed to work and display beautifully on all mobile devices and the framework offers a number of mobile components all based on a stunning extensible base theme.
+
+Ionic was built with the latest mobile devices in mind and it uses minimal DOM manipulation and zero jQuery. It uses AngularJS which allows developers to develop serious, robust mobile applications.
+
+This is the most important factor that leads us to make the decision to use Ionicframework. In WebUI the whole UI was developed under AngularJS, with which plenty plugins are integrated and customized. We can share most of the plugins if we use Ionicframework.
+
+## 3.5 Existing Problem and Possible Solution
+
+### 3.5.1 Mobile UI
+
+#### 3.5.1.1 Memory Leaks
+
+An obvious problem is that each time when all icons are loaded, an extra 100MB memory will be consumed, even when we return back to previous page, the garbage collection will not collect this amount of resource. I tried to track the consumption of memory usage during the whole workflow, but I didn't find the exact problem.
+
+#### 3.5.1.2 Launching Time and Large Cache
+
+After optimization, like loading libraries asynchronously, currently the launching time is around 5s for desktop browser and 50 seconds for a real mobile phone. Obviously this launching time is inacceptable.
+
+The problem is we have a really large local cache to load during launching, whose size is more than 40MB. Before loading Mobile UI pages, we need to write cache into local storage, which requires a considerable time. One point must be explained here is, in priorit we use IndexedDB as local storage by default. However as the picture below indicates, currently Safari and iOS Safari don't support IndexedDB, so we use IndexedDBShim, which exposes the IndexedDB API in unsupported browsers using WebSQL. This shim is basically an IndexedDB-WebSql adapter.
+
+![pic](https://db.tt/8p1I3uWu)
+
+Fortunately，the next version of Safari will support IndexedDB, coming with OS X 10.10 and iOS 8.
+
+### 3.5.2 Form Controllers
+
+#### 3.5.2.1 Cron Controller
+
+As time is limited, I implemented a simple cron box that only supports basic syntax of CRON data. Cron syntax supports special characters Asterisk (*), Slash (/), Comma (,), Hyphen (-), Percent (%) and "L", "W", etc. The difficulty relies on the transformation from Cron text to human readable text.
+
+#### 3.5.2.2 Map Related Controller
+
+We are changing our map plugin from Google to Leaflet and OpenStreetMap, which are open-sourced and customizable. But in the same time, there are also quite many problems.
+
+For example, as you can see in the screenshot below, even thought the map repeats, but the markers only display in a single interval. This is an open issue of leaflet, and there's no appropriate solution for this bug.
+
+![pic](https://db.tt/ZAKDNeZr)
+
 
 
 
