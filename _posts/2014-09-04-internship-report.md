@@ -469,6 +469,28 @@ For example, as you can see in the screenshot below, even thought the map repeat
 
 ![pic](https://db.tt/ZAKDNeZr)
 
+# 4 Summary
+
+## 4.1 Gains
+
+### 4.1.1 Technical Skills
+
+The biggest gain from the internship is I learnt asynchronous programming, both for the user interface and server. Node.js is a powerful tool that massively improves the I/O performance thanks to its Non-blocking I/O.
+
+Besides the programming language, I also learnt many pratical frameworks and related plugins, for example, AngularJS, require.js, lodash.js, etc. In open source community there are plenty fantastic libraries, which is developed and maintained by many brilliant developers from all around the world. The Stoic team also contributed a lot to many open source libraries. I did learnt a lot by reading their source code.
+
+### 4.1.2 Tasks Management
+
+As I am the one who works on Mobile UI for almost 5 months, Ismael and I started the project by designing the UI and defining basic requirements. We made a plan for the whole developing process and gave priorities to each task.
+
+With the help from Ismael and Jacques, I learnt how to handle the conflict between fixing existing bugs and implementing new features. In a startup like us, we use agile development that requires fast interation. We need to ensure that implemented code can run without bugs firstly, then add more new features.
+
+### 4.1.3 Cooperation in a Team
+
+During the whole internship, I have cooperated with almost everyone in this team, by which I get familiar with the whole stoic platform quickly. Ismael is my tutor of internship, we discussed everyday about my work and we work togather for the Mobile UI and some meta data. Jacques keeps testing the Mobile UI and form controllers and gives me bug reports. Besides we also worked togather about image loading to Amazon AWS. Florian always gives me help in AngularJS and helps me to improve the code quality. I worked with Pascal and Yves about stoic authentication for Mobile UI. Jim helped me to integrating some functions into Formula.js. I worked with Huges to test the performance of IndexedDB and at last, I also worked with Francois to refactory the map perspective.
+
+From the cooperation, I get familiar with the whole stoic platform quickly.
+
 
 
 
