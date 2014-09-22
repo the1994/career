@@ -6,8 +6,11 @@ category: "Programming"
 tags: ["AngularJS", "JavaScript", "Node.js", "Ionicframework", "CSS", "Wikipedia", "d3.js"]
 ---
 
-- This report is not an official version.
-- All screenshots are taken by myself or taken from [sutoiku.com](https://db.tt/dhTrnpEu). Please feel free to use them for non commercial usage.
+>This report is not an official version.
+>
+>It is for my "stage de fin d'étude à Ecole des Mines de Nancy".
+>
+>All screenshots are taken by myself or taken from [sutoiku.com](https://db.tt/dhTrnpEu). Please feel free to use them for non commercial usage.
 
 # 1. Introduction
 
@@ -459,7 +462,7 @@ Fortunately，the next version of Safari will support IndexedDB, coming with OS 
 
 #### 3.5.2.1 Cron Controller
 
-As time is limited, I implemented a simple cron box that only supports basic syntax of CRON data. Cron syntax supports special characters Asterisk (*), Slash (/), Comma (,), Hyphen (-), Percent (%) and "L", "W", etc. The difficulty relies on the transformation from Cron text to human readable text.
+As time is limited, I implemented a simple cron box that only supports basic syntax of CRON data. Cron syntax supports special characters Asterisk (\*), Slash (/), Comma (,), Hyphen (\-), Percent (%) and "L", "W", etc. The difficulty relies on the transformation from Cron text to human readable text.
 
 #### 3.5.2.2 Map Related Controller
 
