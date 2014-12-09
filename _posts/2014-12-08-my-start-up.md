@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Startup"
-description: ""
+description: "纷印, fenyin, fenyin.me, 在线打印"
 category: ""
 tags: []
 ---
@@ -18,6 +18,6 @@ November 15th, I developed the first version of our website, here are some captu
 
 ![img](http://img.hb.aicdn.com/e68f8cbe0019b619bc008f4a5ee41c590558b7764ce8f-kslfcd_fw658)
 
-**纷印** is online printing service, especially designed for students within campus. Upload files to our platform, set printing configuration, pay! Student no longer needs to go to print shop and line up, waiting for print machines and set print configurations on site. We speed up printing process and give massive convienience to both student and print shops.
+[纷印](https://fenyin.me) is online printing service, especially designed for students within campus. Upload files to our platform, set printing configuration, pay! Student no longer needs to go to print shop and line up, waiting for print machines and set print configurations on site. We speed up printing process and give massive convienience to both student and print shops.
 
 Time is money, we save money for you.
