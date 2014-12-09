@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "创业一个半月"
-description: ""
+description: "纷印, fenyin, fenyin.me"
 category: ""
 tags: []
 ---
