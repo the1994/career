@@ -10,7 +10,7 @@ After reading Ismeal's blog, [Performance Data for FormulaC++](http://sutoiku.co
 
 Since October 1th, when I came back to Shanghai Jiao Tong University, I found that Big Data is much more complex than what I know about it. I think it worthes the return.
 
-Besides the daily work assigned by my prof, which requires me to work as a full stack developer (Avalon + Spring + Struts + Hibernate), I'm also working as a part-time front-end developer in the team Frint. To tell the truth, it's a promising start-up, providing C2B online printing service, which greatly solves the problem of the long-waiting in front of the print shop. What I'm working is developing the website and co-operate with the backend team to interact.
+Besides the daily work assigned by my prof, which requires me to work as a full stack developer (Avalon + Spring + Struts + Hibernate), I'm also working as a part-time front-end developer in the team [Fenyin (纷印)](https://fenyin.me). To tell the truth, it's a promising start-up, providing C2B online printing service, which greatly solves the problem of the long-waiting in front of the print shop. What I'm working is developing the website and co-operate with the backend team to interact.
 
 Next week as expected, I would join the Data Center Group of Intel Aisa-Pasific Research Company, which is located besides the University, I wish I could finish my research project in this team and learn more about the power of Storm and Spark.
 
