@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Startup - fenyin.me"
+title: "Startup - Fenyin"
 description: "纷印, fenyin, fenyin.me, 在线打印"
 category: ""
 tags: []
