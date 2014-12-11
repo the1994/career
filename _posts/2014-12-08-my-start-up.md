@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Startup - Fenyin"
-description: "纷印, fenyin, fenyin.me, 在线打印"
-category: ""
+description: "纷印, fenyin, fenyin.me, 在线打印, 东半球最好用的打印服务"
+category: "Startup"
 tags: []
 ---
 
@@ -10,7 +10,7 @@ October, I came back to China from Palo Alto.
 
 October 15th, I got the intern position from Intel's Data Center Group, doing research on Media Big Data Cross-Video Analytics.
 
-October 25th, I got acquainted with the two founders of **纷印**, we decided to rock the printing market of Chinese University.
+October 25th, I got acquainted with the two founders of [纷印](https://fenyin.me), we decided to rock the printing market of Chinese University.
 
 November 15th, I developed the first version of our website, here are some captures:
 
